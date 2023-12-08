@@ -18,7 +18,8 @@ body{
    
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    margin: 0%;
+    margin: 0 auto;
+    position: relative;
 }
 
 p{
@@ -30,12 +31,16 @@ p{
 header{
     position: sticky;
     top: 0;
+
     left: 0;
     z-index: 100;
 
+    margin: 0 auto;
+
     background-color: white;
     width: 100%;
-    padding: 10px 40px 5px 40px;
+    height: 6.5rem;
+    
     border-bottom: .1rem solid rgb(219, 219, 219);
 
     display: flex;
@@ -48,27 +53,6 @@ header{
     width: 100%;    
 }
 
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li{
-    position: relative;
-    list-style: none;
-}
-
-
-/*barra  navegacion*/
-.contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-height: 60rem;
-}
-
 .nav-header{
     background-color: white;
     display: flex;
@@ -77,15 +61,31 @@ header ul li{
 }
 
 .lista-nav{
-    justify-content: center;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
     margin: 0;
     padding: 0;
 }
 
- .item{
+li{
+    list-style: none;
+    margin: .1rem;
+}
+/*barra  navegacion*/
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*min-height: 60rem;*/
+}
+
+.item{
 
     position: relative;
-    margin: 0 15px;
+    margin: 0 1rem;
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -109,13 +109,16 @@ header ul li{
 .quienSoy{
     margin:2rem 0rem 0rem 0rem;
     display: flex;
+    flex-wrap: wrap;
+
     background-color: rgb(20, 65, 104);
-    height: 30rem;
+    min-height: 30rem;
 
     position: relative;
     
     z-index: 50;
 }
+
 .nombre{
     text-align: left;
     color: white;
@@ -148,6 +151,7 @@ h2{
 
 .lista-proyectos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 85%;
     margin: 1.5rem 0;
@@ -213,6 +217,7 @@ h2{
 .titulo-proyecto{
     margin-top: 0;
     margin-bottom: 0;
+    font-size: large;
 }
 
 
@@ -265,7 +270,7 @@ span{
 }
 
 .conocimientos{
-    height: 24rem;
+    min-height: 24rem;
 
     display: flex;
     flex-direction: row;
@@ -371,4 +376,51 @@ footer{
     display: flex;
     align-items: end;
     justify-content: center;
+}
+
+
+@media (max-width: 768px){
+
+    body{
+        font-size: 1rem;
+    }
+
+    header{
+        position: fixed;
+        bottom: 0;
+        top:auto;
+        margin: 0;
+        display: block;
+        height: 4rem;
+        border-top: .1rem solid rgb(219, 219, 219);
+        border-bottom: 0;
+    }
+    .nav-header{
+        display: block;
+    }
+    .lista-nav{
+        justify-content: space-around;
+    }
+    .separador{
+        height: 0;
+    }
+    .item{
+        height: 3.5rem;
+        margin: 0 .5rem;
+    }
+    .quienSoy{
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .foto-perfil{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: .5rem auto;
+    }
+    .parrafo-perfil{
+        margin: 1rem auto;
+        width: 100%;
+    }
+    
 }
