@@ -382,7 +382,7 @@ footer{
 @media (max-width: 768px){
 
     body{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     header{
@@ -406,8 +406,9 @@ footer{
     }
     .item{
         height: 3.5rem;
-        margin: 0 .5rem;
+        margin: 0;
     }
+
     .quienSoy{
         margin: 0 auto;
         padding: 2rem;
