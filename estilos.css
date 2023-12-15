@@ -1,0 +1,458 @@
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+.hero-span{
+    font-size:xx-large;
+    color: rgb(20, 65, 104);
+}
+
+body{
+    background-color: white;
+   
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+p{
+    font-size: medium;
+}
+
+
+
+header{
+    position: sticky;
+    top: 0;
+
+    left: 0;
+    z-index: 100;
+
+    margin: 0 auto;
+
+    background-color: white;
+    width: 100%;
+    height: 6.5rem;
+    
+    border-bottom: .1rem solid rgb(219, 219, 219);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.separador{
+    height: 7.9rem;
+    width: 100%;    
+}
+
+.nav-header{
+    background-color: white;
+    display: flex;
+    justify-content:right; 
+    margin: 0;
+}
+.lista-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin: 0;
+}
+
+/*barra  navegacion*/
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*min-height: 60rem;*/
+}
+
+.item{
+
+    position: relative;
+    margin: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+    height: 5rem;
+    width: 100%;
+    font-size: xx-large;
+}
+
+.item:hover {
+    background-color: rgb(20, 65, 104);
+    border-radius: .7rem;
+    transition-duration: 50ms;
+    text-decoration: none;
+    color:white;
+}
+
+ 
+.quienSoy{
+    margin:2rem 0rem 0rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: rgb(20, 65, 104);
+    min-height: 30rem;
+
+    position: relative;
+    
+    z-index: 50;
+}
+
+.nombre{
+    text-align: left;
+    font-size: xx-large;
+    color: white;
+}
+
+.parrafo-perfil{
+    width: 55%;
+    margin: 5rem;
+    color: white;
+}
+
+.foto-perfil{
+    height: 34rem;
+    width: 30rem;
+    position: absolute;
+    top: -2rem;
+    z-index: 50;
+    
+    right: 8%;
+    background-color: white;
+    border: 3px solid rgb(20, 65, 104);
+    border-radius: .7rem;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+.lista-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
+    margin: 1.5rem 0;
+    
+}
+
+.elemento{
+    transition-duration: 200ms;
+    position: relative;
+
+    width: 40rem;
+    height: 50rem;
+
+    margin: 2rem;
+    padding: .2rem;
+
+    text-align: center;
+    color: rgb(20, 65, 104);
+    background-color: white;
+
+    text-decoration: none;
+    border: .1rem solid rgb(219, 219, 219);
+    border-radius: .7rem;
+}
+
+.altura{
+    transition-duration: 200ms;
+    position: relative;
+
+    width: 40rem;
+    height: 80rem;
+
+    margin: 2rem;
+    padding: .2rem;
+
+    text-align: center;
+    color: rgb(20, 65, 104);
+    background-color: white;
+
+    text-decoration: none;
+    border: .1rem solid rgb(236, 236, 236);
+    border-radius: .7rem;
+}
+
+.elemento img{
+    border-radius: .7rem;
+    height: 25rem;
+    width: 100%;
+    /*background-repeat: no-repeat;*/
+    background-position:right;
+    aspect-ratio: 16/9;
+    object-fit:contain;
+    background-size:contain;
+    
+}
+
+.elemento:hover{
+    transition-duration: 200ms;
+    background-color: rgb(20, 65, 104);
+    color: white;
+}
+
+.titulo-proyecto{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: large;
+}
+
+
+.link-repo{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: white;
+    border-radius: .7rem;
+}
+
+.link-repo:hover{
+    background-color:rgb(255, 126, 34);
+}
+
+
+.hide{
+    display: none;
+    
+}
+
+.show{
+    display: block;
+    
+    
+}
+
+
+.btn-mas{
+    
+    border: 3px solid rgb(20, 65, 104);
+    padding: 8px;
+    margin: 8px;
+    border-radius: .7rem;
+    background-color:white;
+    color: rgb(20, 65, 104);
+    font-size: medium;
+}
+
+
+.links{
+    display: flex;
+}
+
+span{
+    color: rgb(255, 126, 34);
+}
+
+.conocimientos{
+    min-height: 24rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: rgb(20, 65, 104);
+}
+
+.web{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+.back{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+.misc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.producto{
+    
+    width: 12rem;
+    height: 12rem;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: .7rem;
+}
+
+
+.producto img{
+    height: 8rem;
+    width: 8rem;    
+}
+
+
+.contacto{
+    height: 20rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-contacto{
+    transition-duration: 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    background-color: white;
+    color:rgb(20, 65, 104);
+    
+    border-radius: .7rem;
+    border: 3px solid white;
+}
+
+.link-contacto:hover{
+    transition-duration: 200ms;
+    border: 3px solid rgb(20, 65, 104);
+}
+
+.link-contacto img{
+
+    margin: 1rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.link-contacto p{
+    margin: 1rem;
+    font-size: large;
+    outline: none; 
+}
+
+
+footer{
+    height: 20rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px){
+
+    body{
+        font-size: 1.5rem;
+    }
+
+    header{
+        position: fixed;
+        bottom: 0;
+        top:auto;
+        margin: 0;
+        display: block;
+        height: 4rem;
+        border-top: .1rem solid rgb(219, 219, 219);
+        border-bottom: 0;
+    }
+    .nav-header{
+        margin: 0;
+        display: block;
+    }
+    .lista-nav{
+        margin: 0;
+        justify-content: space-around;
+    }
+    .separador{
+        height: 0;
+    }
+
+    .item{
+        height: 3.5rem;
+        margin: 0 .2rem;
+        font-size: medium;
+    }
+
+    p{
+        text-align: left;
+    }
+
+    .quienSoy{
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .foto-perfil{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: .5rem auto;
+    }
+    .parrafo-perfil{
+        margin: 1rem auto;
+        width: 100%;
+    }
+
+    .elemento{
+        height: 46rem;
+        padding: 1rem;
+    }
+
+    .elemento img{
+        border-radius: .7rem;
+        height: 18rem;
+        padding: 1rem;
+        width: 100%;
+        /*background-repeat: no-repeat;*/
+        background-position:right;
+        aspect-ratio: 16/9;
+        object-fit:contain;
+        
+    }
+
+    .altura{
+        height: 93rem;
+    }
+    
+}
