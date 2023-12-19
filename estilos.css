@@ -114,7 +114,7 @@ li{
     flex-wrap: wrap;
 
     background-color: rgb(20, 65, 104);
-    min-height: 36rem;
+    min-height: 32rem;
 
     position: relative;
     
@@ -133,13 +133,18 @@ li{
     width: 55%;
     margin: 5rem;
     color: white;
+    
+}
+
+p{
+    font-size: large;
 }
 
 .foto-perfil{
     height: 39.6rem;
     width: 30rem;
     position: absolute;
-    top: -1.8rem;
+    top: -1.7rem;
     z-index: 50;
     
     right: 8%;
@@ -414,6 +419,7 @@ footer{
         width: 50%;
     }
     .foto-perfil{
+        top: 1rem;
         right: 2%;
     }
 }
@@ -459,6 +465,10 @@ footer{
     .quienSoy{
         margin: 0 auto;
         padding: 2rem;
+    }
+    .nombre{
+        text-align: center;
+        font-size: 2.3rem;
     }
     .foto-perfil{
         position: relative;
