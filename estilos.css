@@ -18,7 +18,7 @@ body{
     background-color: white;
    
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    
     margin: 0 auto;
     position: relative;
 }
@@ -114,7 +114,7 @@ li{
     flex-wrap: wrap;
 
     background-color: rgb(20, 65, 104);
-    min-height: 30rem;
+    min-height: 36rem;
 
     position: relative;
     
@@ -123,8 +123,10 @@ li{
 
 .nombre{
     text-align: left;
-    font-size: xx-large;
+    font-size: 5rem;
     color: white;
+    margin:0;
+    padding: 0;
 }
 
 .parrafo-perfil{
@@ -137,7 +139,7 @@ li{
     height: 39.6rem;
     width: 30rem;
     position: absolute;
-    top: -5rem;
+    top: -1.8rem;
     z-index: 50;
     
     right: 8%;
@@ -388,6 +390,33 @@ footer{
     justify-content: center;
 }
 
+
+@media (max-width: 1242px){
+    .quienSoy{
+        min-height: 396px;
+    }
+    .nombre{
+        font-size: 4rem;
+    }
+    .parrafo-perfil{
+        margin: 3rem;
+        width: 60%;
+    }
+    .foto-perfil{
+        top: 0rem;
+        right: 3rem;
+    }
+
+}
+@media (max-width: 905px){
+    .parrafo-perfil{
+        margin: 2rem;
+        width: 50%;
+    }
+    .foto-perfil{
+        right: 2%;
+    }
+}
 
 @media (max-width: 768px){
 
