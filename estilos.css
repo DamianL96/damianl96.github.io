@@ -133,18 +133,24 @@ li{
 }
 
 .foto-perfil{
-    height: 34rem;
+    height: 39.6rem;
     width: 30rem;
     position: absolute;
-    top: -2rem;
+    top: -5rem;
     z-index: 50;
     
     right: 8%;
     background-color: white;
-    border: 3px solid rgb(20, 65, 104);
+    border: 5px solid rgb(20, 65, 104);
     border-radius: .7rem;
 }
 
+.foto-perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+
+}
 
 h2{
     text-align: center;
@@ -159,6 +165,7 @@ h2{
     margin: 1.5rem 0;
     
 }
+
 
 .elemento{
     transition-duration: 200ms;
