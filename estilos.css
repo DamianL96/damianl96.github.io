@@ -24,10 +24,10 @@ body{
 }
 
 p{
+    text-align: left;
     font-size: medium;
     margin-bottom: .5rem;
 }
-
 
 
 header{
@@ -180,10 +180,10 @@ h2{
     position: relative;
 
     width: 40rem;
-    height: 50rem;
+    height: 52rem;
 
     margin: 2rem;
-    padding: .2rem;
+    padding: 2rem;
 
     text-align: center;
     color: rgb(20, 65, 104);
@@ -194,15 +194,16 @@ h2{
     border-radius: .7rem;
 }
 
+
 .altura{
     transition-duration: 200ms;
     position: relative;
 
     width: 40rem;
-    height: 80rem;
+    height: 108rem;
 
     margin: 2rem;
-    padding: .2rem;
+    padding: 2rem;
 
     text-align: center;
     color: rgb(20, 65, 104);
@@ -211,6 +212,13 @@ h2{
     text-decoration: none;
     border: .1rem solid rgb(236, 236, 236);
     border-radius: .7rem;
+}
+
+.experiencia{
+    font-size: large;
+}
+.funcionalidad{
+    font-size: large;
 }
 
 .elemento img{
@@ -228,7 +236,20 @@ h2{
 .elemento:hover{
     transition-duration: 200ms;
     background-color: rgb(20, 65, 104);
+    
+}
+
+.elemento:hover .titulo-proyecto{
     color: white;
+}
+.elemento:hover p{
+    color: white;
+}
+.elemento:hover .experiencia{
+    color: rgb(255, 126, 34);
+}
+.elemento:hover .funcionalidad{
+    color: rgb(255, 126, 34);
 }
 
 .titulo-proyecto{
@@ -499,7 +520,7 @@ footer{
     }
 
     .altura{
-        height: 93rem;
+        height: 120rem;
     }
     
 }
