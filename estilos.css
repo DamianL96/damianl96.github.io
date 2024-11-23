@@ -1,26 +1,307 @@
-*{
+/*NORMALIZACION*/
+* {
   box-sizing: border-box;
   min-width: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-body{
+body {
   min-height: 100dvh;
+  padding: 0;
+  margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6 {
   text-wrap: balance;
 }
 
-p{
+p {
   text-wrap: pretty;
 }
-/*Normalizacion*/
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-.hero{
+.hero {
   min-height: 250px;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*en lugar de height, ajustar altura con padding cuando sea posible, para adaptar al contenido
+nav position sticky*/
+
+
+/*NAVEGACION--------------------------------------------------------*/
+nav {
+  position: sticky;
+
+  & .lista-navegacion {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 2vh;
+    margin: 0 15rem;
+  }
+
+  & .link-nav {
+    font-size: 1.875rem;
+    /*30px*/
+    color: black;
+  }
+
+  & a{
+    display: inline-block;
+    transition: transform 0.2s ease;
+
+    &:hover, &:focus, &:active{
+      transform: scale(1.1);
+      font-weight:500;
+    }
+    
+  }
+
+}
+
+
+
+/*HEADER-------------------------------------------------------------*/
+section {
+  min-height: 90dvh;
+}
+
+.container-flex-header {
+  display: flex;
+}
+
+.item-article-header {
+  flex: 4;
+  min-width: 300px;
+  margin-top: 10rem;
+  padding: 0 2vw;
+
+  & .nombre {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 4.375rem;
+  }
+
+  & .subtitulo-article{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  & .descripcion-breve {
+    width: 80%;
+    margin-top: 4rem;
+    font-size: 2.188rem;
+    font-weight:400;
+  }
+}
+
+.item-aside-header {
+  flex: 2;
+  min-width: 300px;
+  padding: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #557C6A;
+  color: #F4F3F1;
+
+  & .subtitulo-aside{
+    margin-top: 6rem;
+    
+    font-size: 2.188rem;
+    font-weight:300;
+    font-style: italic;
+  }
+
+  & .links-aside {
+
+    min-height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+
+    
+
+    & a {
+      color: #F4F3F1;
+    }
+
+    & .individual-link-aside {
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+
+      
+    }
+  }
+
+  & .parrafo-link {
+    font-size: 2.188rem;
+  }
+
+  & .contacto-btn{
+    padding: .75rem 3.5rem;
+    border: none;
+    border-radius: 50px;
+
+    background-color: #E7DDAC;
+    font-size: 1.75rem;
+    color: #361300;
+  }
+}
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media(max-width:1720px){
+  .item-aside-header{
+    & .subtitulo-aside{
+      font-size: 2rem;
+    }
+    & .parrafo-link{
+      font-size: 2rem;
+    }
+    &.link-aside{
+      &.individual-link-aside{
+        gap: 1rem;
+      }
+      
+    }
+  }
+
+  .icon{
+    height: 3em;
+    width: 3em;
+  }
+  
+}
+
+@media(max-width:1430px){
+  .item-aside-header{
+   
+    & .subtitulo-aside{
+      font-size: 1.75rem;
+    }
+    & .parrafo-link{
+      font-size: 1.75rem;
+    }
+    &.link-aside{
+      &.individual-link-aside{
+        gap: 1rem;
+      }
+      
+    }
+  }
+  .icon{
+    height: 2em;
+    width: 2em;
+  }
+  
+}
+
+
+
+@media(max-width:1024px) {
+
+  /*NAVEGACION*/
+  nav {
+    & .lista-navegacion {
+      justify-content: space-around;
+      margin: 0;
+    }
+  }
+
+  /*HEADER*/
+  section{
+    min-height: 70dvh;
+  }
+  .item-article-header {
+
+    & .nombre {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    & .subtitulo-article {
+      font-size: 1.5rem;
+    }
+
+    & .descripcion-breve {
+      font-size: 1.375rem;
+    }
+  }
+
+}
+
+@media(max-width:760px) {
+
+  /*NAVEGACION*/
+  nav{
+    & .link-nav {
+      font-size: 0.875rem;/* 14px movil*/
+    }
+  }
+
+  /*HEADER*/
+  section{
+    min-height: 30dvh;
+  }
+  .container-flex-header{
+    flex-direction: column;
+  }
+  .item-article-header{
+    margin: 4dvh 2vw;
+  
+    & .nombre{
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+    }
+    & .subtitulo-article{
+      font-size: 1.5rem;
+    }
+    & .descripcion-breve{
+      font-size: 1.375rem;
+    }
+  }
+  .item-aside-header{
+
+    & .subtitulo-aside{
+      margin: 4dvh 0;
+      font-size: 1.375rem;
+    }
+    & .parrafo-link{
+      margin: 2dvh 0;
+      font-size: 1.375rem;
+    }
+    & .contacto-btn{
+      margin: 2dvh 0;
+      font-size: 1rem;
+    }
+
+  }
+
+}
+
