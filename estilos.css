@@ -13,7 +13,12 @@ body {
   margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
@@ -60,15 +65,17 @@ nav {
     color: black;
   }
 
-  & a{
+  & a {
     display: inline-block;
     transition: transform 0.2s ease;
 
-    &:hover, &:focus, &:active{
+    &:hover,
+    &:focus,
+    &:active {
       transform: scale(1.1);
-      font-weight:500;
+      font-weight: 500;
     }
-    
+
   }
 
 }
@@ -76,11 +83,9 @@ nav {
 
 
 /*HEADER-------------------------------------------------------------*/
-section {
-  min-height: 90dvh;
-}
 
 .container-flex-header {
+  min-height: 90dvh;
   display: flex;
 }
 
@@ -96,7 +101,7 @@ section {
     line-height: 4.375rem;
   }
 
-  & .subtitulo-article{
+  & .subtitulo-article {
     margin-top: 2rem;
     font-size: 2.5rem;
     font-weight: 400;
@@ -107,7 +112,7 @@ section {
     width: 80%;
     margin-top: 4rem;
     font-size: 2.188rem;
-    font-weight:400;
+    font-weight: 400;
   }
 }
 
@@ -124,11 +129,11 @@ section {
   background-color: #557C6A;
   color: #F4F3F1;
 
-  & .subtitulo-aside{
+  & .subtitulo-aside {
     margin-top: 6rem;
-    
+
     font-size: 2.188rem;
-    font-weight:300;
+    font-weight: 300;
     font-style: italic;
   }
 
@@ -140,7 +145,7 @@ section {
     align-items: start;
     justify-content: space-around;
 
-    
+
 
     & a {
       color: #F4F3F1;
@@ -151,75 +156,177 @@ section {
       align-items: center;
       gap: 2vw;
 
-      
+
     }
   }
 
   & .parrafo-link {
     font-size: 2.188rem;
   }
+}
 
-  & .contacto-btn{
-    padding: .75rem 3.5rem;
-    border: none;
-    border-radius: 50px;
+.btn{
+  border-radius: 50px;
+  background-color: #E7DDAC;
+  color: #361300;
+}
 
-    background-color: #E7DDAC;
-    font-size: 1.75rem;
-    color: #361300;
+.btn-contacto{
+  padding: .75rem 3.5rem;
+  border: none;
+  font-size: 1.75rem;
+}
+
+.btn-exp{
+  padding: .25rem 2.5rem;
+  font-size: 1.25rem;
+}
+
+/*EXPERIENCIA*/
+.container {
+  min-height: 40dvh;
+
+  display: grid;
+  grid-template-areas:
+    "texto foto"
+    "links-exp foto";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  gap: 10px;
+
+  color: #253C31;
+  background-color: #A3BFA8;
+
+  padding: 8dvh 4vw;
+
+}
+
+.texto {
+  grid-area: texto;
+
+  & p {
+    font-size: 1.75;
+    font-weight: 600;
+    margin-top: 1dvh;
+
+    line-height: 1.5rem;
   }
+}
+
+.foto {
+  grid-area: foto;
+}
+
+
+/*LINKS REPOSITORIO*/
+.links-exp {
+  grid-area: links-exp;
+  display: flex;
+  
+  justify-content: start;
+  align-items: center;
+
+  gap: 4vw;
+  margin-top: 4dvh;
+}
+
+/*TEXTO EXPERIENCIA*/
+.nombre-exp {
+  font-weight: 600;
+  font-size: 3.125rem;
+}
+
+.subtitulo-exp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1dvh;
+
+  & p {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+.tecnologia-exp {
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: 1vw;
+  row-gap: 5px;
+
+  margin-top: 2dvh;
+}
+
+.pill {
+  background-color: #253C31;
+  color: #CFE8D3;
+  font-weight: 600;
+
+  padding: 5px 20px;
+
+  border-radius: 50px;
 }
 
 
 
-
+/*FOTO EXPERIENCIA*/
 
 
 /*MEDIA QUERIES*/
-@media(max-width:1720px){
-  .item-aside-header{
-    & .subtitulo-aside{
+@media(max-width:1720px) {
+
+  /*HEADER*/
+  .item-aside-header {
+    & .subtitulo-aside {
       font-size: 2rem;
     }
-    & .parrafo-link{
+
+    & .parrafo-link {
       font-size: 2rem;
     }
-    &.link-aside{
-      &.individual-link-aside{
+
+    &.link-aside {
+      &.individual-link-aside {
         gap: 1rem;
       }
-      
+
     }
   }
 
-  .icon{
+  .icon {
     height: 3em;
     width: 3em;
   }
-  
+
 }
 
-@media(max-width:1430px){
-  .item-aside-header{
-   
-    & .subtitulo-aside{
+@media(max-width:1430px) {
+
+  /*HEADER*/
+  .item-aside-header {
+
+    & .subtitulo-aside {
       font-size: 1.75rem;
     }
-    & .parrafo-link{
+
+    & .parrafo-link {
       font-size: 1.75rem;
     }
-    &.link-aside{
-      &.individual-link-aside{
+
+    &.link-aside {
+      &.individual-link-aside {
         gap: 1rem;
       }
-      
+
     }
   }
-  .icon{
+
+  .icon {
     height: 2em;
     width: 2em;
   }
-  
+
 }
 
 
@@ -235,9 +342,10 @@ section {
   }
 
   /*HEADER*/
-  section{
+  .container-flex-header {
     min-height: 70dvh;
   }
+
   .item-article-header {
 
     & .nombre {
@@ -259,49 +367,63 @@ section {
 @media(max-width:760px) {
 
   /*NAVEGACION*/
-  nav{
+  nav {
     & .link-nav {
-      font-size: 0.875rem;/* 14px movil*/
+      font-size: 0.875rem;
+      /* 14px movil*/
     }
   }
 
   /*HEADER*/
-  section{
+  .container-flex-header {
     min-height: 30dvh;
-  }
-  .container-flex-header{
     flex-direction: column;
   }
-  .item-article-header{
+
+  .item-article-header {
     margin: 4dvh 2vw;
-  
-    & .nombre{
+
+    & .nombre {
       font-size: 1.75rem;
       line-height: 2.5rem;
     }
-    & .subtitulo-article{
+
+    & .subtitulo-article {
       font-size: 1.5rem;
     }
-    & .descripcion-breve{
+
+    & .descripcion-breve {
       font-size: 1.375rem;
     }
   }
-  .item-aside-header{
 
-    & .subtitulo-aside{
+  .item-aside-header {
+
+    & .subtitulo-aside {
       margin: 4dvh 0;
       font-size: 1.375rem;
     }
-    & .parrafo-link{
+
+    & .parrafo-link {
       margin: 2dvh 0;
       font-size: 1.375rem;
     }
-    & .contacto-btn{
+
+    & .contacto-btn {
       margin: 2dvh 0;
       font-size: 1rem;
     }
 
   }
 
-}
+  /*EXPERIENCIA*/
 
+  .container {
+    grid-template-areas:
+      "texto"
+      "foto"
+      "links-exp";
+    grid-template-columns: 1fr;
+  }
+
+}
