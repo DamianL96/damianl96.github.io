@@ -183,7 +183,7 @@ nav {
 }
 
 /*EXPERIENCIA*/
-.container {
+.container-izq {
   min-height: 40dvh;
 
   display: grid;
@@ -193,12 +193,29 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5fr 1fr;
   gap: 10px;
-
+  column-gap: 5vw;
   color: #253C31;
   background-color: #A3BFA8;
 
   padding: 8dvh 4vw;
 
+}
+
+.container-der{
+  min-height: 40dvh;
+
+  display: grid;
+  grid-template-areas:
+    "foto texto"
+    "foto links-exp";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  gap: 10px;
+  column-gap: 5vw;
+  color: #DCF5CA;
+  background-color: #426152;
+
+  padding: 8dvh 4vw;
 }
 
 .texto {
@@ -213,8 +230,35 @@ nav {
   }
 }
 
-.foto {
+.foto-exp {
   grid-area: foto;
+  display: flex;
+}
+.foto-container{
+  max-width: 700px;
+  margin: auto auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #F4F3F1;
+  border-radius: 9px;
+  padding: 4dvh 3vw 2dvh 3vw;
+
+  & .img-responsive{
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    
+    /* -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22); */
+  }
+}
+.banner{
+  width: 40%;
 }
 
 
@@ -258,17 +302,29 @@ nav {
   margin-top: 2dvh;
 }
 
-.pill {
-  background-color: #253C31;
-  color: #CFE8D3;
+.pill{ 
   font-weight: 600;
-
   padding: 5px 20px;
-
   border-radius: 50px;
 }
 
+.izq{
+  background-color: #253C31;
+  color: #CFE8D3;
+}
+.der{
+ background-color: #DCF5CA;
+ color: #2D4439;
+}
 
+.acento{
+  font-weight: bold;
+}
+
+.remarcado{
+  color: #361300;
+  background-color: #E7DDAC;
+}
 
 /*FOTO EXPERIENCIA*/
 
@@ -364,6 +420,20 @@ nav {
 
 }
 
+@media (max-width:972px) {
+  .container-izq, .container-der{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto-exp{
+    margin-top: 2dvh;
+  }
+  .links-exp{
+    justify-content: center;
+  }
+}
+
 @media(max-width:760px) {
 
   /*NAVEGACION*/
@@ -398,7 +468,7 @@ nav {
   }
 
   .item-aside-header {
-
+    padding-top: 6dvh;
     & .subtitulo-aside {
       margin: 4dvh 0;
       font-size: 1.375rem;
@@ -409,21 +479,46 @@ nav {
       font-size: 1.375rem;
     }
 
-    & .contacto-btn {
-      margin: 2dvh 0;
-      font-size: 1rem;
-    }
+  }
 
+  /*BOTONES*/
+  .btn-contacto{
+    font-size: 1rem;
+    padding: .5rem 3rem;
+    margin: 4dvh 0 8dvh 0;
+  }
+  .btn-exp{
+    padding: .25rem 1.5rem;
+    font-size: .875rem;
+    margin: 0 4vw;
   }
 
   /*EXPERIENCIA*/
 
-  .container {
-    grid-template-areas:
-      "texto"
-      "foto"
-      "links-exp";
-    grid-template-columns: 1fr;
+  .container-izq, .container-der {
+    display: flex;
+    flex-direction: column;
   }
 
+  .foto-exp{
+    display: block;
+  }
+  .nombre-exp{
+    font-size: 1.375rem;
+  }
+  .subtitulo-exp{
+    & p{
+      font-size: 1rem;
+    }
+  }
+  .pill{
+    font-size: .75rem;
+    padding: 1px 10px;
+  }
+  .descripcion-exp{
+    font-size: .875rem;
+  }
+  .desafio-exp{
+    font-size: .875rem;
+  }
 }
