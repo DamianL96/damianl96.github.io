@@ -7,10 +7,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100dvh;
   padding: 0;
   margin: 0;
+  background-color: #F4F3F1;
+
 }
 
 h1,
@@ -50,6 +56,8 @@ nav position sticky*/
 /*NAVEGACION--------------------------------------------------------*/
 nav {
   position: sticky;
+  top: 0;
+  background-color: #F4F3F1;
 
   & .lista-navegacion {
     display: flex;
@@ -77,12 +85,14 @@ nav {
     }
 
   }
-
 }
 
 
 
 /*HEADER-------------------------------------------------------------*/
+#inicio {
+  scroll-margin-top: 8dvh;
+}
 
 .container-flex-header {
   min-height: 90dvh;
@@ -126,63 +136,103 @@ nav {
   align-items: center;
   justify-content: space-around;
 
-  background-color: #557C6A;
+  background-color: #253C31;
   color: #F4F3F1;
 
-  & .subtitulo-aside {
-    margin-top: 6rem;
+}
 
-    font-size: 2.188rem;
-    font-weight: 300;
-    font-style: italic;
+.subtitulo-aside {
+  margin-top: 6rem;
+
+  font-size: 2.188rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.links-aside {
+
+  min-height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+
+
+
+  & a {
+    color: #F4F3F1;
   }
 
-  & .links-aside {
-
-    min-height: 40%;
+  & .individual-link-aside {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-around;
+    align-items: center;
+    gap: 2vw;
 
 
-
-    & a {
-      color: #F4F3F1;
-    }
-
-    & .individual-link-aside {
-      display: flex;
-      align-items: center;
-      gap: 2vw;
-
-
-    }
-  }
-
-  & .parrafo-link {
-    font-size: 2.188rem;
   }
 }
 
-.btn{
+.parrafo-link {
+  font-size: 2.188rem;
+}
+
+/*BOTONES----------------------------------------------*/
+.btn {
   border-radius: 50px;
   background-color: #E7DDAC;
   color: #361300;
+  transition-duration: 0.1s;
+  cursor: pointer;
+
 }
 
-.btn-contacto{
+.btn:hover{
+  background-color: #361300;
+  color: #E7DDAC;
+}
+
+.btn:active{
+  background-color: #361300;
+  color: #E7DDAC;
+  box-shadow: 
+    0px -4px 0px 0px #E7DDAC, 
+    inset 0px -4px 0px 0px #253C31, 
+    0px 4px 0px 0px #253C31;
+    
+
+  transform: translateY(4px);
+}
+
+.btn-contacto {
   padding: .75rem 3.5rem;
   border: none;
   font-size: 1.75rem;
 }
 
-.btn-exp{
-  padding: .25rem 2.5rem;
+.btn-exp {
+  padding: .5rem 2.5rem;
   font-size: 1.25rem;
 }
 
-/*EXPERIENCIA*/
+.btn-izq:active{
+  box-shadow: 
+    0px -4px 0px 0px #E7DDAC,
+    inset 0px -4px 0px 0px #A3BFA8,
+    0px 4px 0px 0px #A3BFA8;
+}
+
+.btn-der:active{
+  box-shadow: 
+    0px -4px 0px 0px #E7DDAC, 
+    inset 0px -4px 0px 0px #426152, 
+    0px 4px 0px 0px #426152;
+}
+
+/*EXPERIENCIA-------------------------------------------------*/
+#experiencia {
+  scroll-margin-top: 8dvh;
+}
+
 .container-izq {
   min-height: 40dvh;
 
@@ -201,7 +251,7 @@ nav {
 
 }
 
-.container-der{
+.container-der {
   min-height: 40dvh;
 
   display: grid;
@@ -234,7 +284,8 @@ nav {
   grid-area: foto;
   display: flex;
 }
-.foto-container{
+
+.foto-container {
   max-width: 700px;
   margin: auto auto;
 
@@ -246,18 +297,19 @@ nav {
   border-radius: 9px;
   padding: 4dvh 3vw 2dvh 3vw;
 
-  & .img-responsive{
+  & .img-responsive {
     max-width: 100%;
     height: auto;
     max-height: 600px;
     object-fit: contain;
-    
+
     /* -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22);
     -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22);
     box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22); */
   }
 }
-.banner{
+
+.banner {
   width: 40%;
 }
 
@@ -266,7 +318,7 @@ nav {
 .links-exp {
   grid-area: links-exp;
   display: flex;
-  
+
   justify-content: start;
   align-items: center;
 
@@ -302,26 +354,27 @@ nav {
   margin-top: 2dvh;
 }
 
-.pill{ 
+.pill {
   font-weight: 600;
   padding: 5px 20px;
   border-radius: 50px;
 }
 
-.izq{
+.izq {
   background-color: #253C31;
   color: #CFE8D3;
 }
-.der{
- background-color: #DCF5CA;
- color: #2D4439;
+
+.der {
+  background-color: #DCF5CA;
+  color: #2D4439;
 }
 
-.acento{
+.acento {
   font-weight: bold;
 }
 
-.remarcado{
+.remarcado {
   color: #361300;
   background-color: #E7DDAC;
 }
@@ -333,22 +386,22 @@ nav {
 @media(max-width:1720px) {
 
   /*HEADER*/
-  .item-aside-header {
-    & .subtitulo-aside {
-      font-size: 2rem;
-    }
 
-    & .parrafo-link {
-      font-size: 2rem;
-    }
-
-    &.link-aside {
-      &.individual-link-aside {
-        gap: 1rem;
-      }
-
-    }
+  .subtitulo-aside {
+    font-size: 2rem;
   }
+
+  .parrafo-link {
+    font-size: 2rem;
+  }
+
+  .link-aside {
+    &.individual-link-aside {
+      gap: 1rem;
+    }
+
+  }
+
 
   .icon {
     height: 3em;
@@ -360,23 +413,21 @@ nav {
 @media(max-width:1430px) {
 
   /*HEADER*/
-  .item-aside-header {
-
-    & .subtitulo-aside {
-      font-size: 1.75rem;
-    }
-
-    & .parrafo-link {
-      font-size: 1.75rem;
-    }
-
-    &.link-aside {
-      &.individual-link-aside {
-        gap: 1rem;
-      }
-
-    }
+  .subtitulo-aside {
+    font-size: 1.75rem;
   }
+
+  .parrafo-link {
+    font-size: 1.75rem;
+  }
+
+  .link-aside {
+    &.individual-link-aside {
+      gap: 1rem;
+    }
+
+  }
+
 
   .icon {
     height: 2em;
@@ -421,15 +472,18 @@ nav {
 }
 
 @media (max-width:972px) {
-  .container-izq, .container-der{
+
+  .container-izq,
+  .container-der {
     display: flex;
     flex-direction: column;
   }
 
-  .foto-exp{
+  .foto-exp {
     margin-top: 2dvh;
   }
-  .links-exp{
+
+  .links-exp {
     justify-content: center;
   }
 }
@@ -469,25 +523,26 @@ nav {
 
   .item-aside-header {
     padding-top: 6dvh;
-    & .subtitulo-aside {
-      margin: 4dvh 0;
-      font-size: 1.375rem;
-    }
+  }
 
-    & .parrafo-link {
-      margin: 2dvh 0;
-      font-size: 1.375rem;
-    }
+  .subtitulo-aside {
+    margin: 4dvh 0;
+    font-size: 1.375rem;
+  }
 
+  .parrafo-link {
+    margin: 2dvh 0;
+    font-size: 1.375rem;
   }
 
   /*BOTONES*/
-  .btn-contacto{
+  .btn-contacto {
     font-size: 1rem;
     padding: .5rem 3rem;
     margin: 4dvh 0 8dvh 0;
   }
-  .btn-exp{
+
+  .btn-exp {
     padding: .25rem 1.5rem;
     font-size: .875rem;
     margin: 0 4vw;
@@ -495,30 +550,36 @@ nav {
 
   /*EXPERIENCIA*/
 
-  .container-izq, .container-der {
+  .container-izq,
+  .container-der {
     display: flex;
     flex-direction: column;
   }
 
-  .foto-exp{
+  .foto-exp {
     display: block;
   }
-  .nombre-exp{
+
+  .nombre-exp {
     font-size: 1.375rem;
   }
-  .subtitulo-exp{
-    & p{
+
+  .subtitulo-exp {
+    & p {
       font-size: 1rem;
     }
   }
-  .pill{
+
+  .pill {
     font-size: .75rem;
     padding: 1px 10px;
   }
-  .descripcion-exp{
+
+  .descripcion-exp {
     font-size: .875rem;
   }
-  .desafio-exp{
+
+  .desafio-exp {
     font-size: .875rem;
   }
 }

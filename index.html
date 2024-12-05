@@ -20,13 +20,13 @@
 
   <nav>
     <ul class="lista-navegacion">
-      <li><a class="link-nav" href="#">Inicio</a></li>
-      <li><a class="link-nav" href="#">Experiencia</a></li>
-      <li><a class="link-nav" href="#">Sobre mí</a></li>
+      <li><a class="link-nav" href="#inicio">Inicio</a></li>
+      <li><a class="link-nav" href="#experiencia">Experiencia</a></li>
+      <li><a class="link-nav" href="#about">Sobre mí</a></li>
     </ul>
   </nav>
 
-  <header>
+  <header id="inicio">
 
     <section class="container-flex-header">
 
@@ -45,7 +45,7 @@
 
         <ul class="links-aside">
           <li>
-            <a class="individual-link-aside" href="#">
+            <a class="individual-link-aside" href="">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 26 26">
                 <g fill="none">
                   <defs>
@@ -70,7 +70,7 @@
             </a>
           </li>
           <li>
-            <a class="individual-link-aside" href="#">
+            <a class="individual-link-aside" href="https://github.com/DamianL96" target="_blank">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24">
                 <g fill="none">
                   <g clip-path="url(#akarIconsGithubFill0)">
@@ -89,7 +89,7 @@
             </a>
           </li>
           <li>
-            <a class="individual-link-aside" href="#">
+            <a class="individual-link-aside" href="https://www.linkedin.com/in/damian-e-lambrecht/" target="_blank">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 20 20">
                 <path fill="#f4f3f1"
                   d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.65 13.979H5.706V7.723H7.65zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973m8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699z" />
@@ -106,7 +106,7 @@
   </header>
 
 
-  <main>
+  <main id="experiencia">
     <!-- YOUCREATE ---------------------------------------------------------------------------------------------------->
     <section class="container-izq">
       <article class="texto">
@@ -131,7 +131,8 @@
           experiencia en la administración de finanzas derivadas de colaboraciones con marcas, pagos por monetización o
           regalos costosos que reciben por su actividad. La plataforma busca simplificar la gestión financiera y darles
           un control claro sobre sus ingresos.</p>
-        <p class="desafio-exp"><span class="acento">Desafios:</span> Primera experiencia como Team Leader, poniendo a prueba mis habilidades blandas para
+        <p class="desafio-exp"><span class="acento">Desafios:</span> Primera experiencia como Team Leader, poniendo a
+          prueba mis habilidades blandas para
           mantener una visión global del estado del proyecto, y resolviendo problemas junto a Backend y UX/UI.</p>
       </article>
 
@@ -143,12 +144,13 @@
             <img class="img-responsive" src="img/YouCreate.png" alt="Captura de pantalla de la webapp YouCreate">
           </picture>
         </div>
-        
+
       </div>
 
       <div class="links-exp">
-        <a class="btn btn-exp" href="#">Ver repositorio</a>
-        <a class="btn btn-exp" href="#">Ver demo</a>
+        <a class="btn btn-exp btn-izq" href="https://github.com/igrowker/i003-youcreate-front" target="_blank">Ver
+          repositorio</a>
+        <a class="btn btn-exp btn-izq" href="https://igrowker-youcreate.web.app/" target="_blank">Ver demo</a>
       </div>
 
     </section>
@@ -174,8 +176,12 @@
           <p class="pill der">PostgreSQL</p>
         </div>
 
-        <p class="descripcion-exp">Donatello es un SaaS diseñado específicamente para las necesidades de los pequeños negocios de comida. El 59% de los restaurantes fracasa en los primeros tres años y uno de los principales factores de fracaso es la falta de una gestión adecuada. Donatello permite automatizar tareas repetitivas como la creación de menús, el control de inventario, el seguimiento de ventas y el registro de gastos.</p>
-        <p class="desafio-exp"><span class="acento">Desafios:</span> Ingresé a mitad de desarrollo del proyecto, eso me forzó a adaptarme rápidamente para poder contribuir y cubrir las demandas técnicas del equipo.</p>
+        <p class="descripcion-exp">Donatello es un SaaS diseñado específicamente para las necesidades de los pequeños
+          negocios de comida. El 59% de los restaurantes fracasa en los primeros tres años y uno de los principales
+          factores de fracaso es la falta de una gestión adecuada. Donatello permite automatizar tareas repetitivas como
+          la creación de menús, el control de inventario, el seguimiento de ventas y el registro de gastos.</p>
+        <p class="desafio-exp"><span class="acento">Desafios:</span> Ingresé a mitad de desarrollo del proyecto, eso me
+          forzó a adaptarme rápidamente para poder contribuir y cubrir las demandas técnicas del equipo.</p>
       </article>
 
       <div class="foto-exp">
@@ -186,12 +192,12 @@
             <img class="img-responsive" src="img/Donatello.png" alt="Captura de pantalla de la webapp YouCreate">
           </picture>
         </div>
-        
+
       </div>
 
       <div class="links-exp">
-        <a class="btn btn-exp" href="#">Ver repositorio</a>
-        <a class="btn btn-exp" href="#">Ver demo</a>
+        <a class="btn btn-exp btn-der" href="#" target="_blank">Ver repositorio</a>
+        <a class="btn btn-exp btn-der" href="#" target="_blank">Ver demo</a>
       </div>
 
     </section>
@@ -215,28 +221,32 @@
           <p class="pill izq">CSS</p>
         </div>
 
-        <p class="descripcion-exp">Web de gestión financiera para propietario de un Café, con el diagrama de mesas del establecimiento, permite agregar productos, menús, abrir y cerrar mesas, visualizar el balance del mes.</p>
-        <p class="desafio-exp"><span class="acento">Desafios:</span>Utilicé JavaScript sin frameworks, aprendí rápidamente Express.Js para incorporarlo y gestioné el despliegue tanto de la base de datos como de la aplicación.</p>
+        <p class="descripcion-exp">Web de gestión financiera para propietario de un Café, con el diagrama de mesas del
+          establecimiento, permite agregar productos, menús, abrir y cerrar mesas, visualizar el balance del mes.</p>
+        <p class="desafio-exp"><span class="acento">Desafios:</span>Utilicé JavaScript sin frameworks, aprendí
+          rápidamente Express.Js para incorporarlo y gestioné el despliegue tanto de la base de datos como de la
+          aplicación.</p>
       </article>
 
       <div class="foto-exp">
         <div class="foto-container">
           <img class="banner" src="img/YCBanner.png" alt="Banner con el logo de webapp YouCreate">
           <picture>
-            <source media="(max-width:760px)" src="img/YouCreate600.png">
-            <img class="img-responsive" src="img/YouCreate.png" alt="Captura de pantalla de la webapp YouCreate">
+            <source media="(max-width:760px)" src="img/Cafe.png">
+            <img class="img-responsive" src="img/Cafe.png" alt="Captura de pantalla de la webapp YouCreate">
           </picture>
         </div>
-        
+
       </div>
 
       <div class="links-exp">
-        <a class="btn btn-exp" href="#">Ver repositorio</a>
-        <a class="btn btn-exp" href="#">Ver demo</a>
+        <a class="btn btn-exp btn-izq" href="https://github.com/juaniali/Proyecto-Facturacion" target="_blank">Ver
+          repositorio</a>
+        <a class="btn btn-exp btn-izq" href="https://bar-cafe-manager.netlify.app" target="_blank">Ver demo</a>
       </div>
 
     </section>
-    
+
     <!-- POKEMON ---------------------------------------------------------------------------------------------------->
     <section class="container-der">
       <article class="texto">
@@ -252,32 +262,110 @@
           <p class="pill der">JsonServer</p>
         </div>
 
-        <p class="descripcion-exp">Videojuego de combate interactivo para dos jugadores, utilizamos la API de Pokémon para obtener datos e imágenes y con ellos desarrollamos el sistema de ataque, daño y habilidades. Permite crear usuario, elegir personajes, combatir y guardar las partidas jugadas con los datos de la batalla.</p>
-        <p class="desafio-exp"><span class="acento">Desafios:</span>Me encargué de implementar los formularios, rutas y guards, además de desarrollar un sistema de persistencia de datos utilizando Json Server, ya que no podíamos emplear una base de datos.</p>
+        <p class="descripcion-exp">Videojuego de combate interactivo para dos jugadores, utilizamos la API de Pokémon
+          para obtener datos e imágenes y con ellos desarrollamos el sistema de ataque, daño y habilidades. Permite
+          crear usuario, elegir personajes, combatir y guardar las partidas jugadas con los datos de la batalla.</p>
+        <p class="desafio-exp"><span class="acento">Desafios:</span>Me encargué de implementar los formularios, rutas y
+          guards, además de desarrollar un sistema de persistencia de datos utilizando Json Server, ya que no podíamos
+          emplear una base de datos.</p>
       </article>
 
       <div class="foto-exp">
         <div class="foto-container">
           <img class="banner" src="img/DBanner.png" alt="Banner con el logo de webapp Donatello">
           <picture>
-            <source media="(max-width:760px)" src="img/YouCreate600.png">
-            <img class="img-responsive" src="img/Donatello.png" alt="Captura de pantalla de la webapp YouCreate">
+            <source media="(max-width:760px)" src="img/Pokemon.png">
+            <img class="img-responsive" src="img/Pokemon.png" alt="Captura de pantalla de la webapp YouCreate">
           </picture>
         </div>
-        
+
       </div>
 
       <div class="links-exp">
-        <a class="btn btn-exp" href="#">Ver repositorio</a>
-        <a class="btn btn-exp" href="#">Ver demo</a>
+        <a class="btn btn-exp btn-der" href="https://github.com/igrowker/i003-youcreate-front" target="_blank">Ver
+          repositorio</a>
+        <a class="btn btn-exp btn-der" href="https://igrowker-youcreate.web.app/" target="_blank">Ver demo</a>
       </div>
+
+    </section>
+
+    <section id="about">
+
+      <p>
+        <span>
+          Soy Damián, técnico programador con experiencia en el desarrollo de aplicaciones web. Me gusta implicarme en proyectos que mejoren la calidad de vida de las personas, usando mis habilidades para crear herramientas accesibles y útiles.
+      </span>
+        
+
+        Actualmente me especializo en desarrollo frontend utilizando Angular, he trabajado en varios proyectos colaborativos creando dashboards analíticos, desarrollando aplicaciones de gestión financiera y soluciones Saas.
+        
+        Gracias a mi formación no solo he aprendido a escribir código de manera organizada y estructurada siguiendo buenas prácticas, sino también me ha brindado conocimientos en análisis de sistemas como la recolección y documentación de requisitos funcionales y no funcionales, historias de usuario, casos de uso, diagramas de flujo y modelado entidad-relación.
+        
+        En mi más reciente contribución en Igrowker como desarrollador y líder de equipo de frontend, gestioné el desarrollo de YouCreate una plataforma Fintech, coordinando con diseñadores y backend para entregar el proyecto en tiempo y forma. Mi enfoque en la comunicación y colaboración permitió implementar fuertes medidas de seguridad junto a backend, llegar al plazo estimado con los requisitos funcionales, y garantizar la participación de todos los colaboradores.
+        </p>
 
     </section>
   </main>
 
 
-  <footer>
-
+  <footer class="item-aside-header">
+    
+    <ul class="links-aside">
+      <li>
+        <a class="individual-link-aside" href="">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 26 26">
+            <g fill="none">
+              <defs>
+                <mask id="pepiconsPencilCvCircleFilled0">
+                  <path fill="#fff" d="M0 0h26v26H0z" />
+                  <path fill="#000"
+                    d="M9.5 15.5a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zm0 2.5a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1z" />
+                  <path fill="#000" fill-rule="evenodd"
+                    d="M14.185 4H7.5A1.5 1.5 0 0 0 6 5.5v15A1.5 1.5 0 0 0 7.5 22h11a1.5 1.5 0 0 0 1.5-1.5V10.202a1.5 1.5 0 0 0-.395-1.014l-4.314-4.702A1.5 1.5 0 0 0 14.185 4M7 5.5a.5.5 0 0 1 .5-.5h6.685a.5.5 0 0 1 .369.162l4.314 4.702a.5.5 0 0 1 .132.338V20.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5z"
+                    clip-rule="evenodd" />
+                  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M14.5 5.1v4.7h4.7" />
+                  <path fill="#000" d="M11.134 9.133a1.067 1.067 0 1 0 0-2.133a1.067 1.067 0 0 0 0 2.133" />
+                  <path fill="#000" fill-rule="evenodd"
+                    d="M13.266 11.444c0-1.134-.955-1.955-2.133-1.955S9 10.309 9 11.444v.534a.356.356 0 0 0 .356.355h3.555a.356.356 0 0 0 .355-.355z"
+                    clip-rule="evenodd" />
+                </mask>
+              </defs>
+              <circle cx="13" cy="13" r="13" fill="#f4f3f1" mask="url(#pepiconsPencilCvCircleFilled0)" />
+            </g>
+          </svg>
+          <p class="parrafo-link">Descarga mi CV</p>
+        </a>
+      </li>
+      <li>
+        <a class="individual-link-aside" href="https://github.com/DamianL96" target="_blank">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24">
+            <g fill="none">
+              <g clip-path="url(#akarIconsGithubFill0)">
+                <path fill="#f4f3f1" fill-rule="evenodd"
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12"
+                  clip-rule="evenodd" />
+              </g>
+              <defs>
+                <clipPath id="akarIconsGithubFill0">
+                  <path fill="#fff" d="M0 0h24v24H0z" />
+                </clipPath>
+              </defs>
+            </g>
+          </svg>
+          <p class="parrafo-link">Visita mis repos</p>
+        </a>
+      </li>
+      <li>
+        <a class="individual-link-aside" href="https://www.linkedin.com/in/damian-e-lambrecht/" target="_blank">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 20 20">
+            <path fill="#f4f3f1"
+              d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.65 13.979H5.706V7.723H7.65zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973m8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699z" />
+          </svg>
+          <p class="parrafo-link">Chequea mi LinkedIn</p>
+        </a>
+      </li>
+    </ul>
+    <button class="btn btn-contacto">Contactame</button>
   </footer>
 
 
