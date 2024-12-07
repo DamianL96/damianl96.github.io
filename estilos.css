@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  /* font-family: "Nunito",sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
+  font-family: "Inter"; */
+  font-family: "Lato";
 }
 
 html {
@@ -109,18 +114,21 @@ nav {
     font-size: 5rem;
     font-weight: bold;
     line-height: 4.375rem;
+    font-family: "Montserrat";
   }
 
   & .subtitulo-article {
+    font-family: "Montserrat";
     margin-top: 2rem;
     font-size: 2.5rem;
     font-weight: 400;
     font-style: italic;
+
   }
 
   & .descripcion-breve {
     width: 80%;
-    margin-top: 4rem;
+    margin-top: 8rem;
     font-size: 2.188rem;
     font-weight: 400;
   }
@@ -143,7 +151,7 @@ nav {
 
 .subtitulo-aside {
   margin-top: 6rem;
-
+  font-family: "Montserrat";
   font-size: 2.188rem;
   font-weight: 300;
   font-style: italic;
@@ -173,6 +181,7 @@ nav {
 }
 
 .parrafo-link {
+  font-family: "Montserrat";
   font-size: 2.188rem;
 }
 
@@ -228,6 +237,10 @@ nav {
     0px 4px 0px 0px #426152;
 }
 
+.amarillo{
+  color: #E7DDAC;
+}
+
 /*EXPERIENCIA-------------------------------------------------*/
 #experiencia {
   scroll-margin-top: 8dvh;
@@ -271,12 +284,9 @@ nav {
 .texto {
   grid-area: texto;
 
-  & p {
-    font-size: 1.75;
-    font-weight: 600;
-    margin-top: 1dvh;
-
-    line-height: 1.5rem;
+  & li{
+    list-style:disc;
+    margin-left: 2vw;
   }
 }
 
@@ -323,19 +333,21 @@ nav {
   align-items: center;
 
   gap: 4vw;
-  margin-top: 4dvh;
+  margin-top: 2dvh;
 }
 
 /*TEXTO EXPERIENCIA*/
 .nombre-exp {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 3.125rem;
 }
 
 .subtitulo-exp {
+  font-family: "Montserrat";
   display: flex;
   justify-content: space-between;
-  margin-top: 1dvh;
+  margin-top: .1dvh;
 
   & p {
     font-size: 1.5rem;
@@ -370,6 +382,10 @@ nav {
   color: #2D4439;
 }
 
+.descripcion-exp, .desafio-exp{
+  margin-top: 4dvh;
+}
+
 .acento {
   font-weight: bold;
 }
@@ -379,8 +395,36 @@ nav {
   background-color: #E7DDAC;
 }
 
+
 /*FOTO EXPERIENCIA*/
 
+
+
+/*SOBRE MI*/
+.about{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2vw;
+
+  background-color: #253C31;
+  color: #F4F3F1;
+}
+
+.article-about{
+  max-width: 30vw;
+
+  & p{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+
+
+/*FOOTER*/
+.footer{
+  background-color: #426655;
+}
 
 /*MEDIA QUERIES*/
 @media(max-width:1720px) {
