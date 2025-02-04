@@ -4,95 +4,87 @@
   scroll-margin-top: 8dvh;
 }
 
-.container-izq {
+.componente-experiencia{
   min-height: 40dvh;
-
-  display: grid;
-  grid-template-areas:
-    "texto foto"
-    "links-exp foto";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5fr 1fr;
-  gap: 10px;
-  column-gap: 5vw;
-  color: #253C31;
-  background-color: #A3BFA8;
-
-  padding: 16dvh 4vw;
-
 }
 
-.container-der {
-  min-height: 40dvh;
-
+.grid-experiencia{
   display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+
+  gap: 10px;
+  column-gap: 5vw;
+}
+
+.grid-experiencia-izq{
+  grid-template-areas:
+  "texto foto"
+  "links-exp foto";
+}
+.grid-experiencia-der{
   grid-template-areas:
     "foto texto"
     "foto links-exp";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5fr 1fr;
-  gap: 10px;
-  column-gap: 5vw;
-  color: #DCF5CA;
-  background-color: #426152;
-
-  padding: 16dvh 4vw;
 }
 
-.texto {
+.grid-texto{
   grid-area: texto;
-
-  & li{
-    list-style:disc;
-    margin-left: 2vw;
-  }
 }
 
-.foto-exp {
-  grid-area: foto;
+.rol-fecha{
   display: flex;
+  justify-content: space-between;
+}
+
+.li-exp{
+  list-style:disc;
+  margin-left: 2vw;
+  margin-top: 1dvh;
+}
+
+
+/*FOTO EXPERIENCIA*/
+.grid-foto {
+  grid-area: foto;
+  justify-self: center;
+  align-self: center;
+
+  display: flex;
+  justify-content: center;
+  height: max-content;
 }
 
 .foto-container {
-  max-width: 700px;
-  margin: auto auto;
+  width: max-content;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  justify-content: center;
   align-items: center;
 
-  background-color: #F4F3F1;
-  border-radius: 9px;
-  padding: 4dvh 3vw 2dvh 3vw;
-
-  & .img-responsive {
-    max-width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: contain;
-
-    /* -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22);
-    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22);
-    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.22); */
-  }
+  padding: 1dvh 1vw;
 }
 
-.banner {
-  width: 40%;
-  margin-bottom: 4dvh;
+
+.img-responsive{
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.sombra{
+  box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
 }
 
 
 /*LINKS REPOSITORIO*/
-.links-exp {
+.grid-links {
   grid-area: links-exp;
   display: flex;
 
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
-
-  gap: 4vw;
-  margin-top: 2dvh;
 }
 
 /*TEXTO EXPERIENCIA*/
@@ -108,58 +100,12 @@
 
   column-gap: 1vw;
   row-gap: 5px;
-
-  margin-top: 2dvh;
 }
 
 .pill {
   font-weight: 600;
   padding: 5px 20px;
   border-radius: 50px;
-}
-
-.izq {
-  background-color: #253C31;
-  color: #CFE8D3;
-}
-
-.der {
-  background-color: #DCF5CA;
-  color: #2D4439;
-}
-
-.descripcion-exp{
-  margin-top: 4dvh;
-}
-
-.acento {
-  font-weight: bold;
-}
-
-.remarcado {
-  color: #361300;
-  background-color: #E7DDAC;
-}
-
-
-/*FOTO EXPERIENCIA*/
-.foto{
-  height: auto;
-  width: 40vw;
-
-  padding: 2vw;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img{
-  background-color: #361300;
-  height: 600px;
-  width: 300px;
-
-  margin-left: 20vw;
 }
 
 
