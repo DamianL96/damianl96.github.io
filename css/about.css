@@ -1,0 +1,72 @@
+/*SOBRE MI*/
+.about{
+  padding: 8dvh 4vw;
+
+  background-color: #A3BFA8;
+  color: #253C31;
+}
+
+.titulo-about{
+  text-align: center;
+}
+
+.grid-about{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+.left-bottom{
+  grid-column-start: 1;
+  grid-row-start:2;
+}
+.center-image{
+  grid-row:span 2 /span 2;
+  grid-column-start: 2;
+  grid-row-start: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-image img {
+  height: auto;
+  max-height: 50%; /* Ajusta dinámicamente la altura de la imagen */
+  max-width: 50%; /* Ajusta dinámicamente el ancho de la imagen */
+  object-fit: contain; /* Mantiene las proporciones de la imagen */
+}
+
+.right-top{
+  grid-column-start: 3;
+  grid-row-start:1;
+}
+.right-bottom{
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.left-top, .left-bottom, .right-top, .right-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar verticalmente el contenido */
+  justify-content: center; /* Centrar horizontalmente el contenido */
+  text-align: center; /* Asegura que el texto esté centrado */
+
+  margin: 8dvh 2vw;
+
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1dvh;
+}
+
+.p-about{
+  text-align: center;
+  font-size: 1.5rem;
+}

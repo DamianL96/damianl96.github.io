@@ -1,0 +1,183 @@
+/*HEADER-------------------------------------------------------------*/
+#inicio {
+  scroll-margin-top: 8dvh;
+}
+
+.container-flex-header {
+  min-height: 90dvh;
+  display: flex;
+}
+
+.item-article-header {
+  flex: 4;
+  min-width: 300px;
+  margin-top: 10rem;
+  padding: 0 4vw;
+
+  & .subtitulo-article {
+    margin-top: 2rem;
+  }
+}
+
+.item-aside-header {
+  flex: 2;
+  min-width: 300px;
+  padding: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #253C31;
+  color: #F4F3F1;
+
+}
+
+.subtitulo-aside {
+  margin-top: 6rem;
+}
+
+.links-aside {
+
+  min-height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+
+
+
+  & a {
+    color: #F4F3F1;
+  }
+
+  & .individual-link-aside {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+
+  }
+}
+
+.parrafo-link {
+  font-family: "Montserrat";
+  font-size: 2.188rem;
+}
+
+@media(max-width:1720px) {
+
+  /*HEADER*/
+
+  .subtitulo-aside {
+    font-size: 2rem;
+  }
+
+  .parrafo-link {
+    font-size: 2rem;
+  }
+
+  .link-aside {
+    &.individual-link-aside {
+      gap: 1rem;
+    }
+
+  }
+
+
+  .icon {
+    height: 3em;
+    width: 3em;
+  }
+
+}
+
+@media(max-width:1430px) {
+
+  /*HEADER*/
+  .subtitulo-aside {
+    font-size: 1.75rem;
+  }
+
+  .parrafo-link {
+    font-size: 1.75rem;
+  }
+
+  .link-aside {
+    &.individual-link-aside {
+      gap: 1rem;
+    }
+
+  }
+
+
+  .icon {
+    height: 2em;
+    width: 2em;
+  }
+
+}
+
+@media(max-width:1024px){
+
+  .container-flex-header {
+    min-height: 70dvh;
+  }
+
+  .item-article-header {
+
+    & .nombre {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    & .subtitulo-article {
+      font-size: 1.5rem;
+    }
+
+    & .descripcion-breve {
+      font-size: 1.375rem;
+    }
+  }
+
+}
+
+@media(max-width:760px) {
+
+  .container-flex-header {
+    min-height: 30dvh;
+    flex-direction: column;
+  }
+
+  .item-article-header {
+    margin: 4dvh 2vw;
+
+    & .nombre {
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+    }
+
+    & .subtitulo-article {
+      font-size: 1.5rem;
+    }
+
+    & .descripcion-breve {
+      font-size: 1.375rem;
+    }
+  }
+
+  .item-aside-header {
+    padding-top: 6dvh;
+  }
+
+  .subtitulo-aside {
+    margin: 4dvh 0;
+    font-size: 1.375rem;
+  }
+
+  .parrafo-link {
+    margin: 2dvh 0;
+    font-size: 1.375rem;
+  }
+}
