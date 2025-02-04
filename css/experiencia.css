@@ -14,8 +14,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5fr 1fr;
 
-  gap: 10px;
-  column-gap: 5vw;
+  gap: 4dvh;
+  column-gap: 2vw;
 }
 
 .grid-experiencia-izq{
@@ -73,6 +73,13 @@
   object-fit: contain;
 }
 
+.img-limit{
+  max-width: 400px;
+}
+.banner-limit{
+  max-width: 200px;
+}
+
 .sombra{
   box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
 }
@@ -104,61 +111,47 @@
 
 .pill {
   font-weight: 600;
-  padding: 5px 20px;
+  padding: 3px 15px;
   border-radius: 50px;
 }
 
 
-@media (max-width:972px) {
 
-  .container-izq,
-  .container-der {
+@media ( max-width:1065px){
+  
+
+  .grid-experiencia,
+  .grid-experiencia-izq,
+  .grid-experiencia-der{
     display: flex;
     flex-direction: column;
   }
 
-  .foto-exp {
-    margin-top: 2dvh;
-  }
-
-  .links-exp {
+  .grid-links{
+    gap: 5vw;
     justify-content: center;
   }
+
 }
 
-@media(max-width:760px) {
-/*EXPERIENCIA*/
 
-.container-izq,
-.container-der {
-  display: flex;
-  flex-direction: column;
-}
+@media(max-width:600px) {
 
-.foto-exp {
-  display: block;
-}
-
-.nombre-exp {
-  font-size: 1.375rem;
-}
-
-.subtitulo-exp {
-  & p {
-    font-size: 1rem;
+  .rol-fecha{
+    flex-direction: column;
   }
-}
 
-.pill {
-  font-size: .75rem;
-  padding: 1px 10px;
-}
+  .pill{
+    padding: 2.5px 10px;
+    font-weight: 600;
+    font-size:14px;
+  }
 
-.descripcion-exp {
-  font-size: .875rem;
-}
-
-.desafio-exp {
-  font-size: .875rem;
-}
+  .img-limit{
+    max-width: 260px;
+  }
+  .banner-limit{
+    max-width: 100px;
+  }
+  
 }

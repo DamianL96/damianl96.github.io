@@ -17,7 +17,7 @@
   --fs-base:1rem;
   --fs-subtitle:1.25rem;
   --fs-details:1.75rem;
-  --fs-title:3.125rem;
+  --fs-title:3rem;
   --fs-name:4.35rem;
 
   
@@ -102,8 +102,11 @@ a {
   padding: .5rem 1rem;
 }
 
-.padding-16dvh-4vw{
-  padding: 16dvh 4vw;
+.padding-16dvh-8vw-4vw{
+  padding: 16dvh 8vw 16dvh 4vw;
+}
+.padding-16dvh-4vw-8vw{
+  padding: 16dvh 4vw 16dvh 8vw;
 }
 
 .padding-top-2dvh{
@@ -236,20 +239,45 @@ nav position sticky*/
 /*MEDIA QUERIES*/
 
 
+@media(max-width:1600px){
+  :root{
+    --fs-title:2rem;
+  }
+}
 
-@media(max-width:760px) {
+@media (1065px <= width <= 1300px) {
+  :root{
+    --fs-subtitle:1.1rem;
+  }
+}
 
-  /*BOTONES*/
-  .btn-contacto {
-    font-size: 1rem;
-    padding: .5rem 3rem;
-    margin: 4dvh 0 8dvh 0;
+@media(max-width:1065px){
+  .padding-16dvh-8vw-4vw{
+    padding: 8dvh 4vw;
+  }
+  .padding-16dvh-4vw-8vw{
+    padding: 8dvh 4vw;
+  }
+}
+
+
+@media(max-width:600px) {
+  :root{
+    --fs-title:1.5rem;
+  }
+  
+}
+
+@media(max-width:400px){
+  :root{
+    --fs-title:1.25rem;
+    --fs-subtitle:1rem;
+
+    --padding-top-4dvh:2dvh;
   }
 
-  .btn-exp {
-    padding: .25rem 1.5rem;
-    font-size: .875rem;
-    margin: 0 4vw;
-  }  
+  .marcador::before{
+    left: -.3rem;
+  }
 }
 
