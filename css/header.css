@@ -3,14 +3,15 @@
   scroll-margin-top: 8dvh;
 }
 
-.container-flex-header {
+.section-header {
   min-height: 90dvh;
   display: flex;
 }
 
-.item-article-header {
+.article-header {
   flex: 4;
   min-width: 300px;
+  
   margin-top: 10rem;
   padding: 0 4vw;
 
@@ -61,14 +62,9 @@
   }
 }
 
-.parrafo-link {
-  font-family: "Montserrat";
-  font-size: 2.188rem;
-}
-
 @media(max-width:1720px) {
 
-  /*HEADER*/
+ 
 
   .subtitulo-aside {
     font-size: 2rem;
@@ -95,7 +91,7 @@
 
 @media(max-width:1430px) {
 
-  /*HEADER*/
+  
   .subtitulo-aside {
     font-size: 1.75rem;
   }

@@ -13,13 +13,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
-    rel="stylesheet">
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="estilos.css">
@@ -36,24 +29,25 @@
 
   <nav class="sticky bg-blanco">
     <ul class="lista-navegacion padding-2dvh">
-      <li><a class="font-nav animate link-nav c-negro padding-width-1vw" href="#inicio">Inicio</a></li>
-      <li><a class="font-nav animate link-nav c-negro padding-width-1vw" href="#experiencia">Experiencia</a></li>
-      <li><a class="font-nav animate link-nav c-negro padding-width-1vw" href="#about">Sobre mí</a></li>
+      <li><a class="fsize-details animate link-nav c-negro padding-width-1vw" href="#inicio">Inicio</a></li>
+      <li><a class="fsize-details animate link-nav c-negro padding-width-1vw" href="#experiencia">Experiencia</a></li>
+      <li><a class="fsize-details animate link-nav c-negro padding-width-1vw" href="#about">Sobre mí</a></li>
     </ul>
   </nav>
 
   <header id="inicio">
 
-    <section class="container-flex-header">
+    <section class="section-header">
 
-      <article class="item-article-header">
-        <p class="nombre">Damian Emmanuel Lambrecht</p>
-        <h1 class="subtitulo-article subt-s marcador">Frontend Developer</h1>
+      <article class="article-header">
+        <p class="fsize-nombre weight-600">Damian Emmanuel Lambrecht</p>
+
+        <h1 class="fsize-details weight-400 marcador margin-top-4dvh ffamily-hind italic">Técnico Programador</h1>
       </article>
 
 
       <aside class="item-aside-header">
-        <p class="subtitulo-aside subt-s">Quieres saber mas de mí?</p>
+        <p class="fsize-encabezado weight-400">Quieres saber mas de mí?</p>
 
         <ul class="links-aside">
           <li>
@@ -119,16 +113,16 @@
 
 
   <main id="experiencia">
-    <h2 class="bg-acento padding-1dvh padding-left-8vw header-sticky">EXPERIENCIA</h2>
+    <h2 class="fsize-details bg-acento padding-height-1dvh padding-left-8vw header-sticky">EXPERIENCIA</h2>
     <!-- YOUCREATE ---------------------------------------------------------------------------------------------------->
     <section
       class="componente-experiencia grid-experiencia grid-experiencia-izq bg-oscuro-primario c-claro-primario padding-16dvh-4vw-8vw">
       <article class="grid-texto">
-        <h4 class="titulo marcador c-negro">YouCreate - Fintech</h4>
+        <h4 class="fsize-titulo weight-600 marcador c-negro">YouCreate - Fintech</h4>
 
-        <div class="rol-fecha padding-top-4dvh">
-          <p class="subtitulo">Frontend Team Leader</p>
-          <p class="subtitulo">Agosto - Septiembre 2024</p>
+        <div class="rol-fecha padding-top-4dvh ffamily-hind">
+          <p class="fsize-details ffamily-hind weight-400">Frontend Team Leader</p>
+          <p class="fsize-details ffamily-hind weight-400">Agosto - Septiembre 2024</p>
         </div>
 
         <div class="tecnologia-exp padding-top-2dvh">
@@ -140,22 +134,22 @@
           <p class="pill c-oscuro-primario bg-claro-primario">PostgreSQL</p>
         </div>
 
-        <p class="padding-top-4dvh">Plataforma diseñada para ayudar a creadores de contenido e influencers a
+        <p class="fsize-subtitulo padding-top-4dvh ffamily-hind">Plataforma diseñada para ayudar a creadores de contenido e influencers a
           gestionar
           sus ingresos, gastos y obligaciones fiscales.</p>
         <ul class="padding-top-2dvh">
           <li class="li-exp">
-            <p>Lideré el equipo de Frontend manteniendo comunicación continua con nuestra PM, UX/UI y Team
+            <p class="ffamily-hind">Lideré el equipo de Frontend manteniendo comunicación continua con nuestra PM, UX/UI y Team
               Leader de
               Backend para coordinar despliegues y ajustar las funcionalidades críticas. </p>
           </li>
           <li class="li-exp">
-            <p>Desarrollé componentes clave de la plataforma (Dashboard principal, enrutamiento y
+            <p class="ffamily-hind">Desarrollé componentes clave de la plataforma (Dashboard principal, enrutamiento y
               navegación,
               autenticación e interceptores).</p>
           </li>
           <li class="li-exp">
-            <p>Modifiqué y refactorizé componentes y servicios existentes, reduciendo la complejidad y
+            <p class="ffamily-hind">Modifiqué y refactorizé componentes y servicios existentes, reduciendo la complejidad y
               mejorando la
               legibilidad del código.</p>
           </li>
@@ -164,7 +158,7 @@
 
       <div class="grid-foto">
         <div class="foto-container bg-blanco sombra">
-          <img class="padding-1dvh banner-limit" src="img/banner-youcreate.png" alt="Banner con el logo de webapp YouCreate">
+          <img class="padding-height-1dvh banner-limit" src="img/banner-youcreate.png" alt="Banner con el logo de webapp YouCreate">
           <picture>
             <img class="img-responsive img-limit" src="img/captura-youcreate.png" alt="Captura de pantalla de la webapp YouCreate">
           </picture>
@@ -185,11 +179,11 @@
     <section
       class="componente-experiencia grid-experiencia grid-experiencia-der bg-oscuro-secundario c-claro-secundario padding-16dvh-8vw-4vw">
       <article class="texto">
-        <h4 class="titulo marcador c-negro">Donatello - Plataforma Saas</h4>
+        <h4 class="fsize-titulo weight-600 marcador c-negro">Donatello - Plataforma Saas</h4>
 
-        <div class="rol-fecha padding-top-4dvh">
-          <p class="subtitulo">Frontend Developer</p>
-          <p class="subtitulo">Junio - Agosto 2024</p>
+        <div class="rol-fecha padding-top-4dvh ffamily-hind">
+          <p class="fsize-details ffamily-hind italic">Frontend Developer</p>
+          <p class="fsize-details ffamily-hind italic">Junio - Agosto 2024</p>
         </div>
 
         <div class="tecnologia-exp padding-top-2dvh">
@@ -202,12 +196,12 @@
           <p class="pill c-oscuro-secundario bg-claro-secundario">PostgreSQL</p>
         </div>
 
-        <p class="padding-top-4dvh">Plataforma diseñada para las necesidades de los pequeños negocios de comida,
+        <p class="fsize-subtitulo padding-top-4dvh ffamily-hind">Plataforma diseñada para las necesidades de los pequeños negocios de comida,
           permite
           la creación de menús, control de inventario, seguimiento de ventas y registro de gastos.</p>
         <ul class="padding-top-2dvh">
           <li class="li-exp">
-            <p>Me adapté rápidamente al proyecto cubriendo las demandas técnicas del equipo, desarrollando
+            <p class="ffamily-hind">Me adapté rápidamente al proyecto cubriendo las demandas técnicas del equipo, desarrollando
               los
               componentes y servicios asignados con éxito y en el tiempo esperado.</p>
           </li>
@@ -216,7 +210,7 @@
 
       <div class="grid-foto">
         <div class="foto-container bg-blanco sombra">
-          <img class="padding-1dvh banner-limit" src="img/banner-donatello.png" alt="Banner con el logo de webapp Donatello">
+          <img class="padding-height-1dvh banner-limit" src="img/banner-donatello.png" alt="Banner con el logo de webapp Donatello">
           <picture>
             <img class="img-responsive img-limit" src="img/captura-donatello.png" alt="Captura de pantalla de la webapp YouCreate">
           </picture>
@@ -235,11 +229,11 @@
     <section
       class="componente-experiencia grid-experiencia grid-experiencia-izq bg-oscuro-primario c-claro-primario padding-16dvh-4vw-8vw">
       <article class="texto">
-        <h4 class="titulo marcador c-negro">Cafe Manager - Web SPA</h4>
+        <h4 class="fsize-titulo weight-600 marcador c-negro">Cafe Manager - Web SPA</h4>
 
-        <div class="rol-fecha padding-top-4dvh">
-          <p class="subtitulo">FullStack Developer</p>
-          <p class="subtitulo">Marzo - Mayo 2024</p>
+        <div class="rol-fecha padding-top-4dvh ffamily-hind">
+          <p class="fsize-details ffamily-hind weight-400">FullStack Developer</p>
+          <p class="fsize-details ffamily-hind weight-400">Marzo - Mayo 2024</p>
         </div>
 
         <div class="tecnologia-exp padding-top-2dvh">
@@ -251,17 +245,17 @@
           <p class="pill c-oscuro-primario bg-claro-primario">CSS</p>
         </div>
 
-        <p class="padding-top-4dvh">Web diseñada para gestionar las ventas de un Café, permite agregar productos,
+        <p class="fsize-subtitulo padding-top-4dvh ffamily-hind">Web diseñada para gestionar las ventas de un Café, permite agregar productos,
           menús,
           visualizar el balance mensual y abrir y cerrar mesas.</p>
         <ul class="padding-top-2dvh">
           <li class="li-exp">
-            <p>Me encargué de plantear los requisitos funcionales, los diagramas de Entidad-Relación para la
+            <p class="ffamily-hind">Me encargué de plantear los requisitos funcionales, los diagramas de Entidad-Relación para la
               base de
               datos, normalizar las tablas, desarrollar el proyecto y desplegarlo.</p>
           </li>
           <li class="li-exp">
-            <p>Aprendí Express.js para implementar el Backend y utilicé JavaScript vanilla en el Frontend.
+            <p class="ffamily-hind">Aprendí Express.js para implementar el Backend y utilicé JavaScript vanilla en el Frontend.
             </p>
           </li>
         </ul>
@@ -269,7 +263,7 @@
 
       <div class="grid-foto">
         <div class="foto-container bg-blanco sombra">
-          <img class="padding-1dvh banner-limit" src="img/banner-cafe.png" alt="Banner con el logo de webapp YouCreate">
+          <img class="padding-height-1dvh banner-limit" src="img/banner-cafe.png" alt="Banner con el logo de webapp YouCreate">
           <picture>
             <img class="img-responsive img-limit" src="img/captura-cafe.png" alt="Captura de pantalla de la webapp YouCreate">
           </picture>
@@ -289,29 +283,29 @@
     <section
       class="componente-experiencia grid-experiencia grid-experiencia-der bg-oscuro-secundario c-claro-secundario padding-16dvh-8vw-4vw">
       <article class="texto">
-        <h4 class="titulo marcador c-negro">Pokemon - Web Game</h4>
+        <h4 class="fsize-titulo weight-600 marcador c-negro">Pokemon - Web Game</h4>
 
-        <div class="rol-fecha padding-top-4dvh">
-          <p class="subtitulo">Frontend Developer</p>
-          <p class="subtitulo">Agosto - Noviembre 2023</p>
+        <div class="rol-fecha padding-top-4dvh ffamily-hind">
+          <p class="fsize-details ffamily-hind weight-400">Frontend Developer</p>
+          <p class="fsize-details ffamily-hind weight-400">Agosto - Noviembre 2023</p>
         </div>
 
-        <div class="tecnologia-exp padding-top-4dvh">
+        <div class="tecnologia-exp padding-top-2dvh ffamily-hind">
           <p class="pill c-oscuro-secundario bg-claro-secundario">Angular</p>
           <p class="pill c-oscuro-secundario bg-claro-secundario">JsonServer</p>
         </div>
 
-        <p class="padding-top-4dvh">Videojuego de combate interactivo para dos jugadores, permite crear usuario,
+        <p class="fsize-subtitulo padding-top-4dvh ffamily-hind">Videojuego de combate interactivo para dos jugadores, permite crear usuario,
           elegir
           personajes, combatir y guardar las partidas jugadas con los datos de la batalla.</p>
         <ul class="padding-top-2dvh">
           <li class="li-exp">
-            <p>Me encargué de implementar los formularios, rutas y guards, además de desarrollar un sistema
+            <p class="ffamily-hind">Me encargué de implementar los formularios, rutas y guards, además de desarrollar un sistema
               de
               persistencia de datos utilizando Json Server, ya que no podíamos emplear una base de datos. </p>
           </li>
           <li class="li-exp">
-            <p>Utilizamos la API de Pokémon para obtener datos e imágenes y con ellos desarrollamos un
+            <p class="ffamily-hind">Utilizamos la API de Pokémon para obtener datos e imágenes y con ellos desarrollamos un
               sistema de
               ataque, daño y habilidades.</p>
           </li>
@@ -320,7 +314,7 @@
 
       <div class="grid-foto">
         <div class="foto-container bg-blanco sombra">
-          <img class="padding-1dvh banner-limit" src="img/banner-pokemon.png" alt="Banner con el logo de Pokemon">
+          <img class="padding-height-1dvh banner-limit" src="img/banner-pokemon.png" alt="Banner con el logo de Pokemon">
           <picture>
             <img class="img-responsive img-limit" src="img/captura-pokemon.png" alt="Captura de pantalla de la webapp Batalla Pokemon">
           </picture>
@@ -338,7 +332,7 @@
 
 
     <!--SOBRE MI---------------------------------------------------------------------------------------------------------->
-    <h2 class="bg-acento padding-1dvh padding-left-8vw header-sticky">SOBRE MI</h2>
+    <h2 class="bg-acento padding-height-1dvh padding-left-8vw header-sticky">SOBRE MI</h2>
     <section id="about" class="about">
       <article class="article-about">
         <div class="grid-about">
@@ -351,7 +345,7 @@
               </svg>
             </div>
 
-            <p class="p-s p-about">
+            <p class="p-s p-about ">
               Hola! Soy Damián, técnico programador con experiencia en el desarrollo de aplicaciones web.
               <br><br>Me gusta implicarme en proyectos que mejoren la calidad de vida de las personas,
               usando mis habilidades para crear herramientas accesibles y útiles.
