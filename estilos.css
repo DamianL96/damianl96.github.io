@@ -81,12 +81,17 @@ a {text-decoration: none;}
 
 .padding-top-2dvh{padding-top: 2dvh;}
 .padding-top-4dvh{padding-top: 4dvh;}
+.padding-top-8dvh{padding-top: 8dvh;}
+.padding-top-16dvh{padding-top: 16dvh;}
+
+.padding-bottom-8dvh{padding-bottom: 8dvh;}
 
 .padding-height-1dvh{padding: 1dvh 0;}
 .padding-height-2dvh{padding: 2dvh 0;}
 
 .padding-2dvh{padding: 2dvh;}
 .padding-2vw{padding: 2vw;}
+
 
 .padding-left-8vw{padding-left: 4vw;}
 
@@ -103,6 +108,7 @@ a {text-decoration: none;}
 .margin-top-8dvh{margin-top: 8dvh;}
 .margin-top-16dvh{margin-top: 16dvh;}
 
+.margin-bottom-8dvh{margin-bottom: 8dvh;}
 /*COLORES---------------------------------*/
 .c-blanco{color: var(--blanco);}
 .c-negro{color: var(--negro);}
@@ -125,6 +131,9 @@ a {text-decoration: none;}
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.text-center{
+  text-align: center;
 }
 
 /*EFECTO MARCADOR------------------------------------------------------------------*/
