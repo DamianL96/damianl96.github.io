@@ -14,9 +14,10 @@
   --font-secondary:"Hind", serif;
 
   --fs-base:1rem;
-  --fs-subtitle:1.25rem;
-  --fs-encabezado:1.5rem;
+  --fs-subtitulo:1.25rem;
   --fs-details:1.75rem;
+
+  --fs-encabezado:1.45rem;
   --fs-title:3rem;
   --fs-name:4.35rem;  
 }
@@ -57,8 +58,8 @@ a {text-decoration: none;}
 .ffamily-hind{font-family: var(--font-secondary);}
 
 .fsize-base{font-size: var(--fs-base);}
-.fsize-subtitulo{font-size: var(--fs-subtitle);}
-.fsize-encabezado{font-size: var(--fs-encabezadao);}
+.fsize-subtitulo{font-size: var(--fs-subtitulo);}
+.fsize-encabezado{font-size: var(--fs-encabezado);}
 .fsize-details{font-size: var(--fs-details);}
 .fsize-titulo{font-size: var(--fs-title);}
 .fsize-nombre{font-size: var(--fs-name);}
@@ -66,7 +67,9 @@ a {text-decoration: none;}
 .italic{font-style: italic;}
 
 .weight-400{font-weight: 400;}
+.weight-500{font-weight: 500;}
 .weight-600{font-weight: 600;}
+
 
 .lheigt-4rem{line-height: 4rem;}
 
@@ -83,6 +86,7 @@ a {text-decoration: none;}
 .padding-height-2dvh{padding: 2dvh 0;}
 
 .padding-2dvh{padding: 2dvh;}
+.padding-2vw{padding: 2vw;}
 
 .padding-left-8vw{padding-left: 4vw;}
 
@@ -90,8 +94,14 @@ a {text-decoration: none;}
 .padding-width-4vw{padding: 0 4vw;}
 
 /*MARGIN--------------------------------*/
+.margin-auto{
+  margin: 0 auto;
+}
+
 .margin-top-2dvh{margin-top: 2dvh;}
 .margin-top-4dvh{margin-top: 4dvh;}
+.margin-top-8dvh{margin-top: 8dvh;}
+.margin-top-16dvh{margin-top: 16dvh;}
 
 /*COLORES---------------------------------*/
 .c-blanco{color: var(--blanco);}
@@ -138,7 +148,6 @@ a {text-decoration: none;}
   background-color: var(--acento);
   z-index: -1;
   transform: skewX(-20deg);
-
 }
 .absolute{
   position: absolute;
@@ -154,6 +163,15 @@ a {text-decoration: none;}
 nav position sticky*/
 
 
+/*FLEX--------------------------------*/
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.space-around{
+  justify-content: space-around;
+}
 
 /*BOTONES----------------------------------------------------------------------------*/
 .btn {
@@ -199,7 +217,7 @@ nav position sticky*/
 
 @media (1065px <= width <= 1300px) {
   :root{
-    --fs-subtitle:1.1rem;
+    --fs-subtitulo:1.1rem;
   }
 }
 
@@ -208,6 +226,8 @@ nav position sticky*/
   :root{
     --fs-name:3rem;
     --fs-details:1rem;
+    --fs-encabezado:1.1rem;
+    --fs-subtitulo:1rem;
   }
   .nombre{
     line-height: 3.375rem;
@@ -233,8 +253,6 @@ nav position sticky*/
 @media(max-width:400px){
   :root{
     --fs-title:1.25rem;
-    --fs-subtitle:1rem;
-
     --padding-top-4dvh:2dvh;
   }
 

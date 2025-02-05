@@ -20,7 +20,7 @@
   width: 130%;
   height: 100%;
 
-  transition: .2s cubic-bezier(0.4, 0, 1, 1);
+  transition: .2s ;
   
   z-index: -1;
   transform: skewX(-20deg);
