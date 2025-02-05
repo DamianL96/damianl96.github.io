@@ -97,6 +97,9 @@ a {
   line-height: 4.375rem;
 }
 
+.font-nav{
+  font-size: var(--fs-details);
+}
 
 .padding-s{
   padding: .5rem 1rem;
@@ -117,8 +120,20 @@ a {
   padding-top: 4dvh;
 }
 
-.padding-top-1dvh{
+.padding-1dvh{
   padding: 1dvh 0;
+}
+
+.padding-2dvh{
+  padding: 2dvh;
+}
+
+.padding-left-8vw{
+  padding-left: 4vw;
+}
+
+.padding-width-1vw{
+  padding: 0 1vw;
 }
 
 /*COLORES---------------------------------*/
@@ -197,6 +212,15 @@ a {
   transform: skewX(-20deg);
 
 }
+.absolute{
+  position: absolute;
+}
+
+.header-sticky {  /* sticky de EXPERIENCIA y SOBRE MI*/
+  position: sticky;
+  top: calc(var(--fs-details) + 4dvh);
+  z-index: 2;
+}
 
 /*en lugar de height, ajustar altura con padding cuando sea posible, para adaptar al contenido
 nav position sticky*/
@@ -264,6 +288,7 @@ nav position sticky*/
 @media(max-width:600px) {
   :root{
     --fs-title:1.5rem;
+    --fs-details:1rem;
   }
   
 }
