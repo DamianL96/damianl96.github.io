@@ -55,6 +55,34 @@
 
 .padding-width-12vw{padding-left:12vw; padding-right: 12vw;}
 
+
+.marcador-parrafo{
+  background: linear-gradient(0deg, var(--acento) 100%, transparent 50%); 
+  box-decoration-break: clone; /* Asegura que el fondo se aplique correctamente en saltos de línea */
+  clip-path: polygon(7% 0, 83% 0, 75% 100%, 0% 100%);
+}
+/*
+.marcador-parrafo{
+  position: relative;
+  z-index: 1;
+}
+
+.marcador-parrafo::before{
+  content: '';
+  position: absolute;
+
+  top: 0;
+  left: -2%;
+
+  width: 105%;
+  height: 100%;
+  
+
+  background-color: var(--acento);
+  z-index: -1;
+  transform: skewX(-20deg);
+}*/
+
 @media(max-width:1065px){
   
   .grid-about{
