@@ -1,0 +1,157 @@
+
+/*EXPERIENCIA-------------------------------------------------*/
+#experiencia {
+  scroll-margin-top: 6dvh;
+}
+
+.componente-experiencia{
+  min-height: 40dvh;
+}
+
+.grid-experiencia{
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+
+  gap: 4dvh;
+  column-gap: 2vw;
+}
+
+.grid-experiencia-izq{
+  grid-template-areas:
+  "texto foto"
+  "texto links-exp";
+}
+.grid-experiencia-der{
+  grid-template-areas:
+    "foto texto"
+    "links-exp texto";
+}
+
+.grid-texto{
+  grid-area: texto;
+}
+
+.rol-fecha{
+  display: flex;
+  justify-content: space-between;
+}
+
+.li-exp{
+  list-style:disc;
+  margin-left: 2vw;
+  margin-top: 1dvh;
+}
+
+
+/*FOTO EXPERIENCIA*/
+.grid-foto {
+  grid-area: foto;
+  justify-self: center;
+  align-self: center;
+
+  display: flex;
+  justify-content: center;
+  height: max-content;
+}
+
+.foto-container {
+  width: max-content;
+
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+
+  padding: 1dvh 1vw;
+}
+
+
+.img-responsive{
+  max-height: 224px;
+  object-fit: contain;
+}
+
+.img-limit{
+  max-width: 400px;
+}
+.banner-limit{
+  max-width: 200px;
+}
+
+.sombra{
+  box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+}
+
+
+/*LINKS REPOSITORIO*/
+.grid-links {
+  grid-area: links-exp;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*TEXTO EXPERIENCIA*/
+.subtitulo-exp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .1dvh;
+}
+
+.tecnologia-exp {
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: .5vw;
+  row-gap: 5px;
+}
+
+.pill {
+  font-weight: 400;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+
+
+@media ( max-width:1065px){
+  
+
+  .grid-experiencia,
+  .grid-experiencia-izq,
+  .grid-experiencia-der{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-links{
+    gap: 5vw;
+    justify-content: center;
+  }
+
+}
+
+
+@media(max-width:600px) {
+
+  .rol-fecha{
+    flex-direction: column;
+  }
+
+  .pill{
+    padding: 2.5px 10px;
+    font-weight: 600;
+    font-size:14px;
+  }
+
+  .img-limit{
+    max-width: 260px;
+  }
+  .banner-limit{
+    max-width: 100px;
+  }
+  
+}
