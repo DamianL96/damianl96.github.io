@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 4dvh 2vw;
+  gap: 48px 48px;
 
 
   grid-template-areas: 
@@ -41,8 +41,8 @@
 
 .center-image img {
   height: auto;
-  max-height: 50%; /* Ajusta dinámicamente la altura de la imagen */
-  max-width: 50%; /* Ajusta dinámicamente el ancho de la imagen */
+  max-height: 100%; /* Ajusta dinámicamente la altura de la imagen */
+  max-width: 55%; /* Ajusta dinámicamente el ancho de la imagen */
   object-fit: contain; /* Mantiene las proporciones de la imagen */
 }
 
@@ -58,30 +58,14 @@
 
 .marcador-parrafo{
   background: linear-gradient(0deg, var(--acento) 100%, transparent 50%); 
-  box-decoration-break: clone; /* Asegura que el fondo se aplique correctamente en saltos de línea */
-  clip-path: polygon(7% 0, 83% 0, 75% 100%, 0% 100%);
-}
-/*
-.marcador-parrafo{
-  position: relative;
-  z-index: 1;
+  clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+  display: inline-block;
 }
 
-.marcador-parrafo::before{
-  content: '';
-  position: absolute;
-
-  top: 0;
-  left: -2%;
-
-  width: 105%;
-  height: 100%;
-  
-
-  background-color: var(--acento);
-  z-index: -1;
-  transform: skewX(-20deg);
-}*/
+.subrayado-parrafo{
+  text-decoration: underline;
+  display: inline-block;
+}
 
 @media(max-width:1065px){
   

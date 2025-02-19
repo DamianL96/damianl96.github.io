@@ -1,5 +1,8 @@
 /*NORMALIZACION Y VARIABLES----------------------------------------------*/
 :root{
+
+  font-size: 16px;
+
   --blanco:#ffffff;
   --negro:#000000;
   --acento:#DCF5CA;
@@ -13,13 +16,43 @@
   --font-main:"Montserrat", sans-serif;
   --font-secondary:"Hind", serif;
 
-  --fs-base:1rem;
-  --fs-subtitulo:1.25rem;
-  --fs-details:1.75rem;
 
-  --fs-encabezado:1.45rem;
-  --fs-title:3rem;
-  --fs-name:4.35rem;  
+  /* Font size cuadricula de 8px y line heigth cuadricula de 4px*/
+  --fs-parrafo-3:.75rem;
+  --fs-parrafo-2:.875rem;
+  --fs-parrafo-1:1rem;
+
+  --fs-heading-5:1.25rem;
+  --fs-heading-4:1.5rem;
+  --fs-heading-3:2.25rem;
+
+  --fs-heading-2:3rem;
+  --fs-heading-1:3.375rem;
+
+
+  --lh-parrafo-3:1rem;
+  --lh-parrafo-2:1rem;
+  --lh-parrafo-1:1.5rem;
+
+  --lh-heading-5:1.5rem;
+  --lh-heading-4:2rem;
+  --lh-heading-3:2.5rem;
+  --lh-heading-2:3.5rem;
+  --lh-heading-1:3.5rem;
+  
+
+
+  --fs-pill:1rem;
+  --fs-base:1rem;
+
+  --fs-subtitulo:1.25rem;
+  --fs-details:1.5rem;
+
+  --fs-encabezado:1.25rem;
+  --fs-title:2rem;
+  --fs-name:3.5rem;  
+
+  --fs-nav:1.25rem;
 }
 
 * {
@@ -43,7 +76,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {text-wrap: balance;}
 
-p {text-wrap: pretty;}
+p {text-wrap: pretty; line-height: 1.4;}
 
 img {
   max-width: 100%;
@@ -55,17 +88,63 @@ li {list-style: none;}
 a {text-decoration: none;}
 
 /*TEXTO Y FUENTES ------------------------------------------------------------------*/
+
+/*Font size y line haight en 8 pint grid*/
+
+.fs-parrafo-3{
+  font-size: var(--fs-parrafo-3);
+  line-height: var(--lh-parrafo-3);
+}
+
+.fs-parrafo-2{
+  font-size: var(--fs-parrafo-2);
+  line-height: var(--lh-parrafo-2);
+}
+
+.fs-parrafo-1{
+  font-size: var(--fs-parrafo-1);
+  line-height: var(--lh-parrafo-1);
+}
+
+.fs-heading-5{
+  font-size: var(--fs-heading-5);
+  line-height: var(--lh-heading-5);
+}
+
+.fs-heading-4{
+  font-size: var(--fs-heading-4);
+  line-height: var(--lh-heading-4);
+}
+.fs-heading-3{
+  font-size: var(--fs-heading-3);
+  line-height: var(--lh-heading-3);
+}
+.fs-heading-2{
+  font-size: var(--fs-heading-2);
+  line-height: var(--lh-heading-2);
+}
+.fs-heading-1{
+  font-size: var(--fs-heading-1);
+  line-height: var(--lh-heading-1);
+}
+
+
 .ffamily-hind{font-family: var(--font-secondary);}
 
 .fsize-base{font-size: var(--fs-base);}
 .fsize-subtitulo{font-size: var(--fs-subtitulo);}
 .fsize-encabezado{font-size: var(--fs-encabezado);}
-.fsize-details{font-size: var(--fs-details);}
+
+.fsize-details{font-size: 20px;}
 .fsize-titulo{font-size: var(--fs-title);}
 .fsize-nombre{font-size: var(--fs-name);}
 
+.fsize-nav{font-size: var(--fs-nav);}
+.fsize-pill{font-size: 14px;}
+
 .italic{font-style: italic;}
 
+.weight-300{font-weight: 300;}
 .weight-400{font-weight: 400;}
 .weight-500{font-weight: 500;}
 .weight-600{font-weight: 600;}
@@ -73,13 +152,20 @@ a {text-decoration: none;}
 
 .lheigt-4rem{line-height: 4rem;}
 
+/*line-height multiplos de 4->   4px, 8px, 12px, 16px, 20px, 24px, 28px*/
+/*Padding y margin multiplos de 8->  8px, 16px, 32px, 48px, 56px, 64px, 72px, 80px*/
+
 /*PADDING-----------------------------*/
+
+
+
 .padding-s{padding: .5rem 1rem;}
 
-.padding-16dvh-8vw-4vw{padding: 16dvh 8vw 16dvh 4vw;}
-.padding-16dvh-4vw-8vw{padding: 16dvh 4vw 16dvh 8vw;}
+.padding-16dvh-8vw-4vw{padding: 10dvh 8vw 8dvh 4vw;}
+.padding-16dvh-4vw-8vw{padding: 10dvh 4vw 8dvh 8vw;}
 .padding-1dvh-2vw{padding: 1dvh 2vw;}
 
+.padding-top-1dvh{padding-top: 1dvh;}
 .padding-top-2dvh{padding-top: 2dvh;}
 .padding-top-4dvh{padding-top: 4dvh;}
 .padding-top-8dvh{padding-top: 8dvh;}
@@ -101,13 +187,59 @@ a {text-decoration: none;}
 .padding-width-2vw{padding: 0 2vw;}
 .padding-width-4vw{padding: 0 4vw;}
 
+.padding-width-32{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.padding-height-4{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.padding-height-16{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padding-height-24{
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
 /*MARGIN--------------------------------*/
 .margin-auto{margin: 0 auto;}
+
+.margin-top-8{margin-top: .5rem;}
+.margin-top-16{margin-top: 1rem;}
+.margin-top-24{margin-top: 1.5rem;}
+.margin-top-32{margin-top: 2rem;}
+.margin-top-64{margin-top: 4rem;}
+.margin-top-128{margin-top: 8rem;}
+
+.margin-left-8{margin-left: .5rem;}
+.margin-left-16{margin-left: 1rem;}
+.margin-left-24{margin-left: 1.5rem;}
+.margin-left-32{margin-left: 2rem;}
+.margin-left-64{margin-left: 4rem;}
+
+.margin-left-2vw{
+  margin-left: 2dvw;
+}
+
+
+.margin-right-64{margin-right: 4rem;}
+.margin-right-64vw{margin-right: 3vw;}
 
 .margin-top-2dvh{margin-top: 2dvh;}
 .margin-top-4dvh{margin-top: 4dvh;}
 .margin-top-8dvh{margin-top: 8dvh;}
 .margin-top-16dvh{margin-top: 16dvh;}
+
+.margin-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .margin-bottom-8dvh{margin-bottom: 8dvh;}
 /*COLORES---------------------------------*/
@@ -169,8 +301,8 @@ a {text-decoration: none;}
 
 .header-sticky {  /* sticky de EXPERIENCIA y SOBRE MI*/
   position: sticky;
-  top: calc(var(--fs-details) + 4dvh);
-  z-index: 2;
+  top: calc(var(--fs-heading-5) + 6dvh);
+  z-index: 6;
 }
 
 /*en lugar de height, ajustar altura con padding cuando sea posible, para adaptar al contenido
@@ -229,11 +361,24 @@ nav position sticky*/
   }
 }
 
-@media (1065px <= width <= 1300px) {
+@media(max-width:1108px){
+  :root{
+    --fs-heading-4:1rem;
+    --lh-heading-4:1.5rem;
+  }  
+
+  .icon{
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+
+/* @media (1065px <= width <= 1300px) {
   :root{
     --fs-subtitulo:1.1rem;
   }
-}
+} */
 
 @media(max-width:1065px){
 
@@ -255,14 +400,34 @@ nav position sticky*/
   }
 }
 
+@media(max-width:800px) {
+  :root{
+    --fs-heading-1:2.5rem;
+    --lh-heading-1:3rem;
+
+    --fs-heading-3:1.5rem;
+    --lh-heading-3:2rem;
+
+    --fs-heading-4:1.5rem;
+    --lh-heading-4:2rem;
+  }
+}
 
 @media(max-width:600px) {
+ 
   :root{
-    --fs-title:1.5rem;
-    --fs-details:1rem;
-  }
+    --fs-heading-3:1.25rem;
+    --lh-heading-3:1.5rem;
+
+    --fs-heading-4:1rem;
+    --lh-heading-4:1.5rem;
   
+    --fs-heading-5:.75rem;
+    --lh-heading-5:1rem;
+  } 
 }
+
+
 
 @media(max-width:400px){
   :root{

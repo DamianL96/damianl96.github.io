@@ -21,12 +21,12 @@
 .grid-experiencia-izq{
   grid-template-areas:
   "texto foto"
-  "links-exp foto";
+  "texto links-exp";
 }
 .grid-experiencia-der{
   grid-template-areas:
     "foto texto"
-    "foto links-exp";
+    "links-exp texto";
 }
 
 .grid-texto{
@@ -69,7 +69,7 @@
 
 
 .img-responsive{
-  max-height: 300px;
+  max-height: 224px;
   object-fit: contain;
 }
 
@@ -105,13 +105,13 @@
   display: flex;
   flex-wrap: wrap;
 
-  column-gap: 1vw;
+  column-gap: .5vw;
   row-gap: 5px;
 }
 
 .pill {
-  font-weight: 600;
-  padding: 3px 15px;
+  font-weight: 400;
+  padding: 4px 12px;
   border-radius: 50px;
 }
 

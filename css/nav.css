@@ -2,7 +2,7 @@
 .sticky {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 6;
 }
 
 .animate{
@@ -36,4 +36,13 @@
 .lista-navegacion {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media(max-width:600px){
+ 
+  
+  .padding-width-32{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
