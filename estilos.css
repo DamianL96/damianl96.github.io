@@ -13,10 +13,10 @@
   --oscuro-secundario:#3A4A42;
   --claro-secundario:#F1FFE0;
 
-  --font-main:"Space Grotesk", sans-serif;
-  --font-secondary:"Noto Sans", serif;
+  --font-sans:"Space Grotesk", sans-serif;
+  --font-mono:"JetBrains Mono", monospace;
 
-  /*Noto Sans*//*Space grotesk*/
+  /*JetBrains Mono*//*Space grotesk*/
 /*Colores--------------------------------------------------------------------*/
   --bg:#181710;
   --bg-verde: #253C31;
@@ -26,56 +26,79 @@
 
   
 
-  /* Font size cuadricula de 8px y line heigth cuadricula de 4px*/
-  --fs-xxlarge: 7rem; /*112px*/
-  --fs-xlarge: 6rem; /*96px*/
-  --fs-large: 4.5rem; /*72px*/
-  --fs-medium: 3rem; /*48px*/
-  --fs-small: 2.25rem; /*36px*/
-  --fs-20: 1.25rem; /*20px*/
-  --fs-xsmall: 1rem; /*16px*/
-  --fs-xxsmall: 0.75rem; /*12px*/
+  /* Font size*/
+  --fs-xl: clamp(2.5rem, 6vw, 4.5rem);    /* Hero */
+  --fs-l:  clamp(1.75rem, 4vw, 2.25rem);  /* Section headings */
+  --fs-m:  clamp(1.25rem, 3vw, 1.5rem);   /* Subheadings */
+  --fs-s:  1rem;                          /* Body */
+  --fs-xs: 0.875rem;                      /* Metadata / UI */
+
+  /* Line Height*/
+  --lh-xl: 1.05; /* 72 → statements cortos */
+  --lh-l:  1.22; /* 36 → headings */
+  --lh-m:  1.33; /* 24 → subheadings */
+  --lh-s:  1.5;  /* 16 → lectura */
+  --lh-xs: 1.43; /* 14 → UI */
+
+  /*Espaciado de letras*/
+  --ls-tight: -0.01em; /* Hero / grandes */
+  --ls-none:   0;
+  --ls-wide-s: 0.04em; /* Uppercase medium */
+  --ls-wide-l: 0.06em; /* Uppercase small / pills */
+
+  /*Weight*/
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-bold:    700;  
 
 
+  /*HERO IDENTIDAD*/
+  --type-hero-font: var(--font-sans);
+  --type-hero-size: var(--fs-xl);
+  --type-hero-line: var(--lh-xl);
+  --type-hero-weight: var(--fw-bold);
+  --type-hero-track: var(--ls-tight);
+  --type-hero-transform: uppercase;
 
-/*Borrar------------------*/
-  --fs-parrafo-3:.75rem;
-  --fs-parrafo-2:.875rem;
-  --fs-parrafo-1:1rem;
+  /*Section heading*/
+  --type-h2-font: var(--font-sans);
+  --type-h2-size: var(--fs-l);
+  --type-h2-line: var(--lh-l);
+  --type-h2-weight: var(--fw-bold);
+  --type-h2-track: 0.02em;
+  --type-h2-transform: uppercase;
 
-  --fs-heading-5:1.25rem;
-  --fs-heading-4:1.5rem;
-  --fs-heading-3:2.25rem;
+  /*subheading / rol / highlight*/
+  --type-h3-font: var(--font-sans);
+  --type-h3-size: var(--fs-m);
+  --type-h3-line: var(--lh-m);
+  --type-h3-weight: var(--fw-medium);
+  --type-h3-track: var(--ls-none);
 
-  --fs-heading-2:3rem;
-  --fs-heading-1:3.375rem;
+  /*body text*/
+  --type-body-font: var(--font-sans);
+  --type-body-size: var(--fs-s);
+  --type-body-line: var(--lh-s);
+  --type-body-weight: var(--fw-regular);
+  --type-body-track: var(--ls-none);
 
+  /*metadata / ui / labels */
+  --type-meta-font: var(--font-mono);
+  --type-meta-size: var(--fs-xs);
+  --type-meta-line: var(--lh-xs);
+  --type-meta-weight: var(--fw-bold);
+  --type-meta-track: var(--ls-none);
+  --type-meta-transform: none;
 
-  --lh-parrafo-3:1rem;
-  --lh-parrafo-2:1rem;
-  --lh-parrafo-1:1.5rem;
-
-  --lh-heading-5:1.5rem;
-  --lh-heading-4:2rem;
-  --lh-heading-3:2.5rem;
-  --lh-heading-2:3.5rem;
-  --lh-heading-1:3.5rem;
-  
-
-
-  --fs-pill:1rem;
-  --fs-base:1rem;
-
-  --fs-subtitulo:1.25rem;
-  --fs-details:1.5rem;
-
-  --fs-encabezado:1.25rem;
-  --fs-title:2rem;
-  --fs-name:3.5rem;  
-
-  --fs-nav:1.25rem;
-  
+  /*pills / tags */
+  --type-pill-font: var(--font-mono);
+  --type-pill-size: var(--fs-xs);
+  --type-pill-line: var(--lh-xs);
+  --type-pill-weight: var(--fw-bold);
+  --type-pill-track: var(--ls-wide-l);
+  --type-pill-transform: uppercase;
 }
+
 
 * {
   box-sizing: border-box;
