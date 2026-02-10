@@ -7,3 +7,18 @@
   text-transform: var(--type-hero-transform);
 }
 
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.hero-description{
+
+}
+
+.hero.actions{
+  display: flex;
+  gap: var(--space-s);
+  margin-top: var(--space-m);
+}

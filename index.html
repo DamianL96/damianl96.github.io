@@ -8,8 +8,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/header.css">
@@ -31,58 +33,116 @@
       <li><a href="#" class="nav-text">CONTACTO</a></li>
     </ul>
   </nav>
-  
+
   <header>
+    <div class="container hero-content">
       <span class="meta-text">DISPONIBLE PARA TRABAJAR</span>
-      <h1 class="hero-title">BACKEND DEVELOPER</h1>
-      <p class="p-text">Java  - Spring Boot · APIs REST claras y seguras · Logica de negocio y modelado de datos · Experiencia Full Stack y liderazgo</p>
-      <a href="#" class="meta-text">Ver Proyectos</a>
-      <a href="#" class="meta-text">Contacto</a>
+      <h1 class="hero-title">BACKEND <br> DEVELOPER</h1>
+      <p class="p-text">Java - Spring Boot · APIs REST claras y seguras · Logica de negocio y modelado de datos ·
+        Experiencia Full Stack y liderazgo</p>
+      <div class="hero-actions">
+        <a href="#" class="meta-text">Ver Proyectos</a>
+        <a href="#" class="meta-text">Contacto</a>
+      </div>
+
+    </div>
+
   </header>
-  
+
   <main>
     <div class="pill-text">banner</div>
-    
-    <section>
-      <h2 class="h2-text">Que hago</h2>
 
-      <article>
-        <h3 class="h3-text">Backend</h3>
+    <section class="section intro">
+      <div class="container">
+        <h2 class="h2-text section-title">Que hago</h2>
 
-        <ul>
-          <li><p class="p-text">Desarrollo APIs REST con Java y Spring Boot, priorizando claridad, mantenibilidad y consistencia.</p></li>
-          <li><p class="p-text">Trabajo con arquitectura modular, DTOs, validaciones y modelado de datos relacional en MySQL, gestionando la evolución del esquema mediante migraciones versionadas.</p></li>
-        </ul>
-      </article>
+        <div class="card-grid">
+          <article class="card">
+            <h3 class="h3-text">Backend</h3>
 
-      <article>
-        <h3 class="h3-text">Seguridad y calidad</h3>
+            <ul>
+              <li>
+                <p class="p-text">Desarrollo APIs REST con Java y Spring Boot, priorizando claridad, mantenibilidad y
+                  consistencia.</p>
+              </li>
+              <li>
+                <p class="p-text">Trabajo con arquitectura modular, DTOs, validaciones y modelado de datos relacional en
+                  MySQL, gestionando la evolución del esquema mediante migraciones versionadas.</p>
+              </li>
+            </ul>
+          </article>
 
-        <ul>
-          <li><p class="p-text">Implemento autenticación y autorización con Spring Security y JWT, cuidando contratos de API claros, manejo de errores consistente y documentación accesible con OpenAPI.</p></li>
-          <li><p class="p-text">Mi foco está en que los sistemas sean seguros, previsibles y fáciles de consumir.</p></li>
-        </ul>
-      </article>
+          <article class="card">
+            <h3 class="h3-text">Seguridad y calidad</h3>
 
-      <article>
-        <h3 class="h3-text">Producto y trabajo en equipo</h3>
+            <ul>
+              <li>
+                <p class="p-text">Implemento autenticación y autorización con Spring Security y JWT, cuidando contratos
+                  de
+                  API claros, manejo de errores consistente y documentación accesible con OpenAPI.</p>
+              </li>
+              <li>
+                <p class="p-text">Mi foco está en que los sistemas sean seguros, previsibles y fáciles de consumir.</p>
+              </li>
+            </ul>
+          </article>
 
-        <ul>
-          <li><p class="p-text">Bajo ideas a MVPs concretos, participando desde la definición de requisitos, ERD y decisiones técnicas iniciales.</p></li>
-          <li><p class="p-text">He trabajado y liderado equipos Back-End, facilitando la comunicación entre lógica, API y UI para mantener la coherencia en todo el sistema.</p></li>
-        </ul>
-      </article>
+          <article class="card">
+            <h3 class="h3-text">Producto y trabajo en equipo</h3>
+
+            <ul>
+              <li>
+                <p class="p-text">Bajo ideas a MVPs concretos, participando desde la definición de requisitos, ERD y
+                  decisiones técnicas iniciales.</p>
+              </li>
+              <li>
+                <p class="p-text">He trabajado y liderado equipos Back-End, facilitando la comunicación entre lógica,
+                  API
+                  y UI para mantener la coherencia en todo el sistema.</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+      </div>
+
 
     </section>
 
-    <section>
-      <h2 class="h2-text">Proyectos destacados</h2>
+    <section class="section">
+      <h2 class="h2-text section-title">Proyectos destacados</h2>
+
+      <div>
+        <article class="project-card">
+          <img src="" alt="">
+
+          <div class="project-content">
+            <ul class="project-features">
+              <li>Spring Boot</li>
+              <li>JWT</li>
+              <li>MySQL</li>
+            </ul>
+
+            <h3>Forohub</h3>
+            <p>Rol: Backend Developer</p>
+            <p class="p-text">Api rest para gestion de foros</p>
+            <span>Características clave:</span>
+
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+
     </section>
 
 
-    <section>
-      <h2 class="h2-text">Sobre Mí</h2>
-      
+    <section class="section">
+      <h2 class="h2-text section-title">Sobre Mí</h2>
+
       <section>
         <div>
           <img src="" alt="">
@@ -91,33 +151,54 @@
           <p class="p-text">Me enfoco en crear sistemas claros, seguros y pensados para procesos reales.</p>
         </div>
 
-        <article>
-          <h3 class="h3-text">Intereses</h3>
-          <p class="p-text">Me gusta entender cómo funcionan las cosas por detrás: la lógica, los datos y las decisiones que hacen que un sistema sea confiable.</p>
-          <p class="p-text">Disfruto trabajar en problemas donde haya que pensar estructura, claridad y escalabilidad.</p> 
-          <p class="p-text">Me interesa especialmente el backend como espacio donde se cruzan la técnica y el negocio, transformar requerimientos difusos en soluciones concretas, entendibles y seguras.</p>
-        </article>
+        <div class="container about-layout">
+          <article>
+            <h3 class="h3-text">Intereses</h3>
+            <p class="p-text">Me gusta entender cómo funcionan las cosas por detrás: la lógica, los datos y las
+              decisiones
+              que hacen que un sistema sea confiable.</p>
+            <p class="p-text">Disfruto trabajar en problemas donde haya que pensar estructura, claridad y escalabilidad.
+            </p>
+            <p class="p-text">Me interesa especialmente el backend como espacio donde se cruzan la técnica y el negocio,
+              transformar requerimientos difusos en soluciones concretas, entendibles y seguras.</p>
+          </article>
 
-        <article>
-          <h3 class="h3-text">Formación</h3>
-          <p class="p-text">Tengo formación en programación lo que me dio una base sólida para pensar tanto el qué como el cómo de una solución.</p>
-          <p class="p-text">Me especialicé en Back-End con Java y Spring Boot, trabajando con APIs REST, modelado de datos, seguridad y documentación.</p>
-          <p class="p-text">También cuento con experiencia Full Stack, lo que me permite comprender el impacto de las decisiones backend en el frontend y en el usuario final.</p>
-        </article>
-        
-        <article>
-          <h3 class="h3-text">Presente</h3>
-          <p class="p-text">Actualmente me enfoco en seguir creciendo como desarrollador backend, profundizando en arquitectura, calidad de código y diseño de APIs orientadas a procesos reales.</p>
-          <p class="p-text">Me interesa aprender de proyectos donde el backend no sea solo soporte, sino una pieza clave del producto, y donde exista colaboración real entre desarrollo, datos y negocio.</p>
-          <p class="p-text">Busco entornos donde se valore pensar antes de implementar y mejorar de forma iterativa.</p>
-        </article>
+          <article>
+            <h3 class="h3-text">Formación</h3>
+            <p class="p-text">Tengo formación en programación lo que me dio una base sólida para pensar tanto el qué
+              como
+              el cómo de una solución.</p>
+            <p class="p-text">Me especialicé en Back-End con Java y Spring Boot, trabajando con APIs REST, modelado de
+              datos, seguridad y documentación.</p>
+            <p class="p-text">También cuento con experiencia Full Stack, lo que me permite comprender el impacto de las
+              decisiones backend en el frontend y en el usuario final.</p>
+          </article>
 
-        <article>
-          <h3 class="h3-text">Trabajo en equipo</h3>
-          <p class="p-text">Disfruto el trabajo en equipo y la colaboración entre roles. He participado y liderado equipos Back-End y Full Stack, organizando tareas, priorizando objetivos y manteniendo alineación técnica.</p>
-          <p class="p-text">Tengo facilidad para comunicar ideas técnicas de forma clara, algo que reforcé dando clases y acompañando a personas con distintos niveles de conocimiento.</p>
-          <p class="p-text">Creo en los equipos donde se puede preguntar, discutir decisiones y aprender en conjunto, manteniendo siempre el foco en construir soluciones útiles y bien pensadas.</p>
-        </article>
+          <article>
+            <h3 class="h3-text">Presente</h3>
+            <p class="p-text">Actualmente me enfoco en seguir creciendo como desarrollador backend, profundizando en
+              arquitectura, calidad de código y diseño de APIs orientadas a procesos reales.</p>
+            <p class="p-text">Me interesa aprender de proyectos donde el backend no sea solo soporte, sino una pieza
+              clave
+              del producto, y donde exista colaboración real entre desarrollo, datos y negocio.</p>
+            <p class="p-text">Busco entornos donde se valore pensar antes de implementar y mejorar de forma iterativa.
+            </p>
+          </article>
+          <article>
+            <h3 class="h3-text">Trabajo en equipo</h3>
+            <p class="p-text">Disfruto el trabajo en equipo y la colaboración entre roles. He participado y liderado
+              equipos Back-End y Full Stack, organizando tareas, priorizando objetivos y manteniendo alineación técnica.
+            </p>
+            <p class="p-text">Tengo facilidad para comunicar ideas técnicas de forma clara, algo que reforcé dando
+              clases
+              y acompañando a personas con distintos niveles de conocimiento.</p>
+            <p class="p-text">Creo en los equipos donde se puede preguntar, discutir decisiones y aprender en conjunto,
+              manteniendo siempre el foco en construir soluciones útiles y bien pensadas.</p>
+          </article>
+        </div>
+
+
+
       </section>
 
       <section>
@@ -127,34 +208,43 @@
             <p class="pill-text">Profesor de Diseño Web</p>
             <p class="meta-text">Fundacion La Dulce (Marzo 2025 - Diciembre 2025)</p>
             <ul>
-              <li><p class="p-text">Diseñé y dicté un curso completo, definiendo contenidos, cronograma y ejercicios prácticos.</p></li>
-              <li><p class="p-text">Expliqué conceptos técnicos de forma clara, adaptando el contenido a distintos niveles de conocimiento.</p></li>
-              <li><p class="p-text">Esta experiencia fortaleció mis habilidades de comunicación técnica, liderazgo y trabajo en equipo, especialmente al traducir conceptos complejos a un lenguaje accesible.</p></li>
+              <li>
+                <p class="p-text">Diseñé y dicté un curso completo, definiendo contenidos, cronograma y ejercicios
+                  prácticos.</p>
+              </li>
+              <li>
+                <p class="p-text">Expliqué conceptos técnicos de forma clara, adaptando el contenido a distintos niveles
+                  de conocimiento.</p>
+              </li>
+              <li>
+                <p class="p-text">Esta experiencia fortaleció mis habilidades de comunicación técnica, liderazgo y
+                  trabajo en equipo, especialmente al traducir conceptos complejos a un lenguaje accesible.</p>
+              </li>
             </ul>
           </div>
         </article>
         <article>
           <h3 class="h3-text">Educacion</h3>
-          <ul>
-            <li>
+          <ul class="timeline">
+            <li class="timeline-item">
               <p class="pill-text">Especializacion Back-End Java & Spring Boot</p>
               <p class="meta-text">2025</p>
               <p class="meta-text">Oracle Next Education</p>
             </li>
 
-            <li>
+            <li class="timeline-item">
               <p class="pill-text">Oracle Cloud Infrastructure</p>
               <p class="meta-text">2025</p>
               <p class="meta-text">Oracle</p>
             </li>
 
-            <li>
+            <li class="timeline-item">
               <p class="pill-text">Desarrollador Full.Stack Node.js</p>
               <p class="meta-text">2024</p>
               <p class="meta-text">Codo a codo</p>
             </li>
 
-            <li>
+            <li class="timeline-item">
               <p class="pill-text">Técnico Universitario en Programación</p>
               <p class="meta-text">2022 - 2024</p>
               <p class="meta-text">UTN Mar del Plata</p>
@@ -166,7 +256,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="section">
     <p class="h2-text">¿Te interesa mi perfil o</p>
     <p class="h2-text">alguno de mis proyectos?</p>
 

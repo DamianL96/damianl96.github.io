@@ -1,0 +1,22 @@
+.intro{
+
+}
+
+.section-title{
+    margin-bottom: var(--space-l);
+}
+
+.card{
+    padding: var(--space-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+    border: 2px solid black;
+}
+
+.card-grid{
+    display: grid;
+    gap: var(--space-m);
+
+    grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
+}
