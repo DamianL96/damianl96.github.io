@@ -7,29 +7,3 @@
   text-transform: var(--type-hero-transform);
 }
 
-
-.hero-p{
-  font-family: var(--type-body-font);
-  font-size: var(--type-body-size);
-  line-height: var(--type-body-line);
-  font-weight: var(--type-body-weight);
-  letter-spacing: var(--type-body-track);
-}
-
-.hero-a-text{
-  font-family: var(--type-meta-font);
-  font-size: var(--type-meta-size);
-  line-height: var(--type-meta-line);
-  font-weight: var(--type-meta-weight);
-  letter-spacing: var(--type-meta-track);
-  text-transform: var(--type-meta-transform);
-}
-
-.hero-disponible-text{
-  font-family: var(--type-meta-font);
-  font-size: var(--type-meta-size);
-  line-height: var(--type-meta-line);
-  font-weight: var(--type-meta-weight);
-  letter-spacing: var(--type-meta-track);
-  text-transform: var(--type-meta-transform);
-}

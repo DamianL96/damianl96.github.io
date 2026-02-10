@@ -122,7 +122,10 @@ body {
 
 h1,h2,h3,h4,h5,h6 {text-wrap: balance;}
 
-p {text-wrap: pretty; line-height: 1.4;}
+p {
+  text-wrap: pretty;
+  max-width: 70ch;
+}
 
 img {
   max-width: 100%;
@@ -133,73 +136,50 @@ li {list-style: none;}
 
 a {text-decoration: none;}
 
-/*TEXTO Y FUENTES ------------------------------------------------------------------*/
-
-/*Font size y line haight en 8 point grid*/
-
-.fs-parrafo-3{
-  font-size: var(--fs-parrafo-3);
-  line-height: var(--lh-parrafo-3);
+.h2-text{
+  font-family: var(--type-h2-font);
+  font-size: var(--type-h2-size);
+  line-height: var(--type-h2-line);
+  font-weight: var(--type-h2-weight);
+  letter-spacing: var(--type-h2-track);
+  text-transform: var(--type-h2-transform);
 }
 
-.fs-parrafo-2{
-  font-size: var(--fs-parrafo-2);
-  line-height: var(--lh-parrafo-2);
+.h3-text{
+  font-family: var(--type-h3-font);
+  font-size: var(--type-h3-size);
+  line-height: var(--type-h3-line);
+  font-weight: var(--type-h3-weight);
+  letter-spacing: var(--type-h3-track);
+  text-transform: var(--type-h3-transform);
 }
 
-.fs-parrafo-1{
-  font-size: var(--fs-parrafo-1);
-  line-height: var(--lh-parrafo-1);
+.p-text{
+  font-family: var(--type-body-font);
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-line);
+  font-weight: var(--type-body-weight);
+  letter-spacing: var(--type-body-track);
 }
 
-.fs-heading-5{
-  font-size: var(--fs-heading-5);
-  line-height: var(--lh-heading-5);
+.meta-text{
+  font-family: var(--type-meta-font);
+  font-size: var(--type-meta-size);
+  line-height: var(--type-meta-line);
+  font-weight: var(--type-meta-weight);
+  letter-spacing: var(--type-meta-track);
+  text-transform: var(--type-meta-transform);
 }
 
-.fs-heading-4{
-  font-size: var(--fs-heading-4);
-  line-height: var(--lh-heading-4);
-}
-.fs-heading-3{
-  font-size: var(--fs-heading-3);
-  line-height: var(--lh-heading-3);
-}
-.fs-heading-2{
-  font-size: var(--fs-heading-2);
-  line-height: var(--lh-heading-2);
-}
-.fs-heading-1{
-  font-size: var(--fs-heading-1);
-  line-height: var(--lh-heading-1);
+.pill-text{
+  font-family: var(--type-pill-font);
+  font-size: var(--type-pill-size);
+  line-height: var(--type-pill-line);
+  font-weight: var(--type-pill-weight);
+  letter-spacing: var(--type-pill-track);
+  text-transform: var(--type-pill-transform);
 }
 
-
-.ffamily-hind{font-family: var(--font-secondary);}
-
-.fsize-base{font-size: var(--fs-base);}
-.fsize-subtitulo{font-size: var(--fs-subtitulo);}
-.fsize-encabezado{font-size: var(--fs-encabezado);}
-
-.fsize-details{font-size: 20px;}
-.fsize-titulo{font-size: var(--fs-title);}
-.fsize-nombre{font-size: var(--fs-name);}
-
-.fsize-nav{font-size: var(--fs-nav);}
-.fsize-pill{font-size: 14px;}
-
-.italic{font-style: italic;}
-
-.weight-300{font-weight: 300;}
-.weight-400{font-weight: 400;}
-.weight-500{font-weight: 500;}
-.weight-600{font-weight: 600;}
-
-
-.lheigt-4rem{line-height: 4rem;}
-
-/*line-height multiplos de 4->   4px, 8px, 12px, 16px, 20px, 24px, 28px*/
-/*Padding y margin multiplos de 8->  8px, 16px, 32px, 48px, 56px, 64px, 72px, 80px*/
 
 /*PADDING-----------------------------*/
 
