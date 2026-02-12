@@ -2,31 +2,21 @@
 :root{
 
   font-size: 16px;
-
-  --blanco:#ffffff;
-  --negro:#000000;
-  --acento:#FFDD00;
-
-  --oscuro-primario:#253C31;
-  --claro-primario:#EDFFE0;
-
-  --oscuro-secundario:#3A4A42;
-  --claro-secundario:#F1FFE0;
-
   --font-sans:"Space Grotesk", sans-serif;
   --font-mono:"JetBrains Mono", monospace;
 
   /*JetBrains Mono*//*Space grotesk*/
 /*Colores--------------------------------------------------------------------*/
-  --bg:#181710;
-  --bg-verde: #253C31;
-  --amarillo: #FFDD00;
-  --negro: #000000;
-  --blanco: #ffffff;
 
+  --primary:#FFDD00;
+  --primary-dark:#E6C700;
+  --secondary:#253C31;
+  --background-light:#FFFFFF;
+  --background-dark:#23200F;
   
 
   /* Font size*/
+  --fs-xxl: clamp(3.5rem, 9vw, 6rem);
   --fs-xl: clamp(2.5rem, 6vw, 4.5rem);    /* Hero */
   --fs-l:  clamp(1.75rem, 4vw, 2.25rem);  /* Section headings */
   --fs-m:  clamp(1.25rem, 3vw, 1.5rem);   /* Subheadings */
@@ -34,13 +24,18 @@
   --fs-xs: 0.875rem;                      /* Metadata / UI */
 
   /* Line Height*/
+  --lh-xxl: 1; /*O 1 probar*/
   --lh-xl: 1.05; /* 72 → statements cortos */
   --lh-l:  1.22; /* 36 → headings */
   --lh-m:  1.33; /* 24 → subheadings */
   --lh-s:  1.5;  /* 16 → lectura */
   --lh-xs: 1.43; /* 14 → UI */
 
+  --height-nav: calc(var(--fs-xs) * var(--lh-xs));
+  --height-banner: calc(var(--fs-xs) * var(--lh-xs));
+
   /*Espaciado de letras*/
+  --ls-super-tight: -0.02em;
   --ls-tight: -0.01em; /* Hero / grandes */
   --ls-none:   0;
   --ls-wide-s: 0.04em; /* Uppercase medium */
@@ -54,10 +49,10 @@
 
   /*HERO IDENTIDAD*/
   --type-hero-font: var(--font-sans);
-  --type-hero-size: var(--fs-xl);
-  --type-hero-line: var(--lh-xl);
+  --type-hero-size: var(--fs-xxl);
+  --type-hero-line: var(--lh-xxl);
   --type-hero-weight: var(--fw-bold);
-  --type-hero-track: var(--ls-tight);
+  --type-hero-track: var(--ls-super-tight);
   --type-hero-transform: uppercase;
 
   /*Section heading*/
@@ -99,14 +94,21 @@
   --type-pill-transform: uppercase;
 
 
+  /*Shadows*/
+  --shad: 5px 5px 0px 0px #000;  
+  --shad-sm: 3px 3px 0px 0px #000;
+  --shad-lg: 8px 8px 0px 0px #000;
+  --shad-hover: 2px 2px 0px 0px #000;
+  
+  --border-width: 3px;
+
   /*Spacing*/
+  --space-xxs:0.5rem;
   --space-xs:0.875rem;
   --space-s:1rem;
   --space-m:1.5rem;
   --space-l:2rem;
   --space-section: clamp(2rem, 6vw, 4rem);
-
-
 }
 
 
@@ -142,72 +144,13 @@ li {list-style: none;}
 
 a {text-decoration: none;}
 
-.h2-text{
-  font-family: var(--type-h2-font);
-  font-size: var(--type-h2-size);
-  line-height: var(--type-h2-line);
-  font-weight: var(--type-h2-weight);
-  letter-spacing: var(--type-h2-track);
-  text-transform: var(--type-h2-transform);
-}
-
-.h3-text{
-  font-family: var(--type-h3-font);
-  font-size: var(--type-h3-size);
-  line-height: var(--type-h3-line);
-  font-weight: var(--type-h3-weight);
-  letter-spacing: var(--type-h3-track);
-  text-transform: var(--type-h3-transform);
-}
-
-.p-text{
-  font-family: var(--type-body-font);
-  font-size: var(--type-body-size);
-  line-height: var(--type-body-line);
-  font-weight: var(--type-body-weight);
-  letter-spacing: var(--type-body-track);
-}
-
-.meta-text{
-  font-family: var(--type-meta-font);
-  font-size: var(--type-meta-size);
-  line-height: var(--type-meta-line);
-  font-weight: var(--type-meta-weight);
-  letter-spacing: var(--type-meta-track);
-  text-transform: var(--type-meta-transform);
-}
-
-.pill-text{
-  font-family: var(--type-pill-font);
-  font-size: var(--type-pill-size);
-  line-height: var(--type-pill-line);
-  font-weight: var(--type-pill-weight);
-  letter-spacing: var(--type-pill-track);
-  text-transform: var(--type-pill-transform);
-}
-
-
-.section{
-  padding-block: var(--space-section);
-}
-
-.container{
-  width: min(100%, 1200px);
-  margin-inline: auto;
-  padding-inline: clamp(1rem, 4vw, 2rem);
+header{
+  background-image: url('img/patron-background.png');
+  background-repeat: repeat;
 }
 
 
 /*COLORES---------------------------------*/
-.bg-principal{background-color: var(--bg);}
-.bg-verde{ background-color: var(--bg-verde);}
-.bg-amarillo{ background-color: var(--amarillo);}
-.bg-negro{background-color: var(--negro);}
-.bg-blanco{background-color: var(--blanco);}
-
-.c-blanco{color: var(--blanco);}
-.c-negro{color: var(--negro);}
-.c-amarillo{color: var(--amarillo);}
 
 
 /*EFECTO MARCADOR------------------------------------------------------------------*/

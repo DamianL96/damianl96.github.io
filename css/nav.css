@@ -6,3 +6,9 @@
   letter-spacing: var(--type-meta-track);
   text-transform: var(--type-meta-transform);
 }
+
+.ul-a{
+  display: flex;
+  justify-content: space-evenly;
+}
+
