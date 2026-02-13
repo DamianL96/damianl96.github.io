@@ -29,9 +29,9 @@
 
   <nav>
     <ul class="ul-a">
-      <li><a href="#" class="nav-text">PROYECTOS</a></li>
-      <li><a href="#" class="nav-text">SOBRE MÍ</a></li>
-      <li><a href="#" class="nav-text">CONTACTO</a></li>
+      <li><a href="#" class="nav-text nav-a">PROYECTOS</a></li>
+      <li><a href="#" class="nav-text nav-a">SOBRE MÍ</a></li>
+      <li><a href="#" class="nav-text nav-a">CONTACTO</a></li>
     </ul>
   </nav>
 
@@ -59,45 +59,76 @@
         <h2 class="h2-text section-title">Que hago</h2>
 
         <div class="card-grid">
-          <article class="card">
-            <h3 class="h3-text">Backend</h3>
 
-            <ul>
-              <li>
-                <p class="p-text">Desarrollo APIs REST con Java y Spring Boot, priorizando claridad, mantenibilidad y
-                  consistencia.</p>
-              </li>
-              <li>
-                <p class="p-text">Trabajo con arquitectura modular, DTOs, validaciones y modelado de datos relacional en
-                  MySQL, gestionando la evolución del esquema mediante migraciones versionadas.</p>
-              </li>
-            </ul>
+          <article class="card neo-card">
+            <div class="intro-card-header bg-secondary">
+              <div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFDD00">
+                  <path d="M300-720q-25 0-42.5 17.5T240-660q0 25 17.5 42.5T300-600q25 0 42.5-17.5T360-660q0-25-17.5-42.5T300-720Zm0 400q-25 0-42.5 17.5T240-260q0 25 17.5 42.5T300-200q25 0 42.5-17.5T360-260q0-25-17.5-42.5T300-320ZM160-840h640q17 0 28.5 11.5T840-800v280q0 17-11.5 28.5T800-480H160q-17 0-28.5-11.5T120-520v-280q0-17 11.5-28.5T160-840Zm40 80v200h560v-200H200Zm-40 320h640q17 0 28.5 11.5T840-400v280q0 17-11.5 28.5T800-80H160q-17 0-28.5-11.5T120-120v-280q0-17 11.5-28.5T160-440Zm40 80v200h560v-200H200Zm0-400v200-200Zm0 400v200-200Z"/>
+                </svg>
+
+              </div>
+              <h3 class="h3-text c-light">Backend</h3>
+            </div>
+            <div class="intro-card-content">
+              <ul>
+                <li class="intro-card-item">
+                  <p class="p-text">Desarrollo APIs REST, priorizando claridad, mantenibilidad y
+                    consistencia.</p>
+                </li>
+                <li class="intro-card-item">
+                  <p class="p-text">Trabajo con arquitectura modular, DTOs, validaciones, modelado de datos relacional, gestionando
+                    la evolución del esquema mediante migraciones versionadas.</p>
+                </li>
+              </ul>
+            </div>
           </article>
 
-          <article class="card">
-            <h3 class="h3-text">Seguridad y calidad</h3>
+          <article class="card neo-card">
+            <div class="intro-card-header bg-dark">
+              <div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFDD00">
+                  <path d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q97-30 162-118.5T718-480H480v-315l-240 90v207q0 7 2 18h238v316Z"/>
+                </svg>
 
-            <ul>
-              <li>
+              </div>
+              <h3 class="h3-text c-light">Seguridad y calidad</h3>
+            </div>
+
+            <ul class="intro-card-content">
+              <li class="intro-card-item">
                 <p class="p-text">Implemento autenticación y autorización con Spring Security y JWT, cuidando contratos
                   de
                   API claros, manejo de errores consistente y documentación accesible con OpenAPI.</p>
               </li>
-              <li>
+              <li class="intro-card-item">
                 <p class="p-text">Mi foco está en que los sistemas sean seguros, previsibles y fáciles de consumir.</p>
               </li>
             </ul>
           </article>
 
-          <article class="card">
-            <h3 class="h3-text">Producto y trabajo en equipo</h3>
 
-            <ul>
-              <li>
+
+
+          <article class="card neo-card">
+            <div class="intro-card-header bg-secondary">
+              <div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFDD00">
+                  <path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/>
+                </svg>
+
+              </div>
+              <h3 class="h3-text c-light">Producto y trabajo</h3>
+            </div>
+            <ul class="intro-card-content">
+              <li class="intro-card-item">
                 <p class="p-text">Bajo ideas a MVPs concretos, participando desde la definición de requisitos, ERD y
                   decisiones técnicas iniciales.</p>
               </li>
-              <li>
+              <li class="intro-card-item">
                 <p class="p-text">He trabajado y liderado equipos Back-End, facilitando la comunicación entre lógica,
                   API
                   y UI para mantener la coherencia en todo el sistema.</p>

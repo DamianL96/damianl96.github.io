@@ -1,14 +1,23 @@
 .nav-text{
   font-family: var(--type-meta-font);
-  font-size: var(--type-meta-size);
+  font-size: var(--type-body-size);
   line-height: var(--type-meta-line);
   font-weight: var(--type-meta-weight);
   letter-spacing: var(--type-meta-track);
   text-transform: var(--type-meta-transform);
+  color: #000;
+  padding: var(--space-l) var(--space-s);
 }
 
 .ul-a{
   display: flex;
   justify-content: space-evenly;
+  
 }
+
+.nav-a{
+  
+}
+
+
 

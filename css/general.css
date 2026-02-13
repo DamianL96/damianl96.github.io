@@ -77,9 +77,25 @@
 }
 
 .bg-primary{
-    background-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.bg-secondary{
+  background-color: var(--secondary);
 }
 
 .bg-light{
-    background-color: var(--background-light);
+  background-color: var(--background-light);
+}
+
+.bg-dark{
+  background-color: var(--background-dark);
+}
+
+.c-light{
+    color: #ffffff;
+}
+
+.c-primary{
+    color: var(--primary);
 }

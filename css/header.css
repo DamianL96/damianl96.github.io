@@ -6,7 +6,7 @@
 }
 
 .hero-content{
-  height: calc(100dvh - var(--height-nav) - var(--height-banner));
+  /* height: calc(100dvh - var(--height-nav) - var(--height-banner)); */
   display: flex;
   flex-direction: column;
   gap: var(--space-m);
