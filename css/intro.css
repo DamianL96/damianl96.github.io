@@ -16,6 +16,13 @@
     flex-direction: column;
     gap: var(--space-s);
     border: 2px solid black;
+
+    transition: all 0.1s ease;
+}
+
+.card:hover{
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shad-lg);
 }
 
 .card-grid{
