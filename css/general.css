@@ -74,6 +74,20 @@
   border: var(--border-width) solid #000;
   box-shadow: var(--shad-sm);
   text-transform: uppercase;
+
+  transition: all 0.1s ease;
+  filter: brightness(95%);
+}
+
+.neo-button:hover{
+  box-shadow: var(--shad);
+  transform: translate(-2px, -2px);
+  filter: brightness(100%);
+}
+
+.neo-button:active{
+  box-shadow: var(--shad-sm);
+  transform: translate(0, 0);
 }
 
 .bg-primary{
@@ -93,9 +107,29 @@
 }
 
 .c-light{
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .c-primary{
-    color: var(--primary);
+  color: var(--primary);
+}
+
+.c-gray{
+  color: var(--gray);
+}
+
+.fw-regular{
+  font-weight: var(--fw-regular);
+}
+
+.fw-medium{
+  font-weight: var(--fw-medium);
+}
+
+.fw-bold{
+  font-weight: var(--fw-bold);
+}
+
+.fw-extrabold{
+  font-weight: var(--fw-extrabold);
 }

@@ -13,6 +13,7 @@
   --secondary:#253C31;
   --background-light:#FFFFFF;
   --background-dark:#000000;
+  --gray:hsl(0, 0%, 35%);
   
 
   /* Font size*/
@@ -45,6 +46,7 @@
   --fw-regular: 400;
   --fw-medium:  500;
   --fw-bold:    700;  
+  --fw-extrabold: 800;
 
 
   /*HERO IDENTIDAD*/
